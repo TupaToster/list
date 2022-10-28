@@ -13,7 +13,7 @@ int main (int argc, char* argv[]) {
 
     ListDump (lol);
 
-    printf ("%Lf", ListPopElement (&lol, 1));
+    ListResizeUp (&lol);
 
     ListDump (lol);
 }

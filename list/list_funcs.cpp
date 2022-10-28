@@ -11,8 +11,10 @@ void NodCtor (Nod* nod) {
 
 void ListCtor (List* list) {
 
+
     if (list == NULL) return;
     if (isPoison(list->errCode)) ListDtor (list);
+
 
     list->canL       = CANL;
     list->size       = 0;
@@ -20,9 +22,10 @@ void ListCtor (List* list) {
     list->firstEmpty = 1;
     list->errCode    = OK;
     list->List       = (Nod*) calloc ((list->capacity + 1) * sizeof (Nod) + 2 * sizeof (unsigned int), sizeof (char));
+    assert (list->List != NULL);
     list->ListCanL   = (unsigned int*) list->List;
    *list->ListCanL   = CANL;
-    list->List      += sizeof (char);
+    (*(unsigned int**) &list->List) += 1;
     list->ListCanR   = (unsigned int*) (list->List + list->capacity + 1);
    *list->ListCanR   = CANR;
     list->canR       = CANR;
@@ -139,7 +142,6 @@ unsigned int ListCountHash (List* list) {
     }
 
     list->hash = hash;
-    flog (hash);
     return hash;
 }
 
@@ -270,7 +272,7 @@ void ListDumpInside (List* list, const char* ListName, const char* fileName, con
     for (int i = 0; i < list->capacity; i++) {
 
         if (isPoison (list->List[i].value)) flogprintf ("|    POISON |")
-        else flogprintf ("| " elem_t_F " |", list->List[i].value);
+        else flogprintf ("| " elem_t_F " |", list->List[i].value)
     }
 
     flogprintf ("\n" "\t\t" "Next  :  ");
@@ -312,9 +314,9 @@ void ListLogErrors (List* list) {
     if (list->errCode & POISONED_ERRCODE     ) strcpy (names[iter++], "\t\t[POISONED_ERRCODE    ]\n");
     if (list->errCode & WRONG_HASH           ) strcpy (names[iter++], "\t\t[WRONG_HASH          ]\n");
 
-    if (iter == 0) fprintf (logOutf, "\t\t[ok]\n");
+    if (iter == 0) flogprintf ("\t\t[ok]\n")
     else
-        for (int i = 0; i < iter; i++) fprintf (logOutf, "%s", names[i]);
+        for (int i = 0; i < iter; i++) flogprintf ("%s", names[i])
 }
 
 int ListPushElement (List* list, elem_t val, int pos) {
@@ -322,7 +324,9 @@ int ListPushElement (List* list, elem_t val, int pos) {
     assert (list != NULL);
     assert (pos > 0);
 
-    //reallocation
+    ListVerifyHash (list);
+
+    ListResize (list);
 
     list->size++;
     int currentElem  = list->firstEmpty;
@@ -352,12 +356,16 @@ int ListPushElement (List* list, elem_t val, int pos) {
         list->List[currentElem].prev = index;
     }
 
+    ListCountHash (list);
+
     return currentElem;
 }
 
 elem_t ListPopElement (List* list, int pos) {
 
     assert (list != NULL);
+
+    ListVerifyHash (list);
 
     int index = list->List[0].next;
 
@@ -379,7 +387,67 @@ elem_t ListPopElement (List* list, int pos) {
     elem_t retVal = list->List[index].value;
     setPoison (list->List[index].value);
 
-    //reallocation
+    ListCountHash (list);
+
+    ListResize (list);
 
     return retVal;
+}
+
+void ListResize (List* list) {
+
+    assert (list != NULL);
+
+    if (list->firstEmpty == 0) {
+
+        ListResizeUp (list);
+    }
+    else if (list->size <= list->capacity * 3 / 8 and list->capacity > 4) {
+
+        //ListResizeDown (list);
+    }
+}
+
+void ListResizeUp (List* list) {
+
+    assert (list != NULL);
+
+    ListVerifyHash (list);
+
+    list->capacity *= 2;
+
+    Nod* temp = (Nod*) calloc ((list->capacity + 1) * sizeof (Nod) + 2 * sizeof (unsigned int), sizeof (char));
+
+    assert (temp != NULL);
+
+    void* previousPtr = list->ListCanL;
+
+    *(unsigned int*) temp = *list->ListCanL;
+    list->ListCanL = (unsigned int*) temp;
+
+    temp = (Nod*)(list->ListCanL + 1);
+
+    *(unsigned int*) (temp + list->capacity + 1) = *list->ListCanR;
+    list->ListCanR = (unsigned int*)(temp + list->capacity + 1);
+
+    temp[0] = list->List[0];
+    for (int i = 1; i <= list->size; i++) {
+
+        temp[i] = list->List[temp[i-1].next];
+        temp[i].prev = i-1;
+        temp[i-1].next = i;
+    }
+
+    for (int i = list->size + 1; i < list->capacity + 1; i++) {
+
+        setPoison (temp[i].value);
+        temp[i].next = -(i+1);
+    }
+
+    temp[list->capacity - 1].next = 0;
+    list->List = temp;
+
+    free (previousPtr);
+
+    ListCountHash (list);
 }

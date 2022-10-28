@@ -93,3 +93,9 @@ void ListLogErrors (List* list);
 int ListPushElement (List* list, elem_t val, int pos);
 
 elem_t ListPopElement (List* list, int pos);
+
+void ListResize (List* list);
+
+void ListResizeUp (List* list);
+
+void ListResizeDown (List* list);

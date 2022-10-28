@@ -1,425 +1,54 @@
 ----------------------------------------
-Logging session at compiled time : 03:01:43 Oct 28 2022
+Logging session at compiled time : 12:48:13 Oct 28 2022
 
-In file list\list_funcs.cpp, function ListCtor, line 17 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
-In file list\list_funcs.cpp, function ListCountHash, line 144 : hash = 2081342619;
-In file list\list_funcs.cpp, function ListCountHash, line 144 : hash = 2081342619;
-In file list\list.cpp, function main, line 12, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 2081342619 (ok)
-	size = 0 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 1 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00A42568	*ListCanL = 3735928559 (ok)
-	ListCanR = 00A425C8	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : | -0.000000 || -0.000000 || -0.000000 || -0.000000 |
-		Next  :  |         0 ||        -2 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list_funcs.cpp, function ListCountHash, line 144 : hash = 2081342619;
-----------------------------------------
-Logging session at compiled time : 03:02:02 Oct 28 2022
-
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3470713793;
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3470713793;
-In file list\list.cpp, function main, line 12, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 3470713793 (ok)
-	size = 0 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 1 (ok)
-	errCode = 0 (ok)
-	ListCanL = 008E24E8	*ListCanL = 3735928559 (ok)
-	ListCanR = 008E2548	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : | -0.000000 || -0.000000 || -0.000000 || -0.000000 |
-		Next  :  |         0 ||        -2 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3470713793;
-----------------------------------------
-Logging session at compiled time : 03:02:02 Oct 28 2022
-
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3719624426;
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 689084910;
-In file list\list.cpp, function main, line 12, list named lol was dumped :
-	Errors :
-		[WRONG_HASH          ]
-	canL = 3735928559 (ok)
-	hash = 689084910 (ok)
-	size = 1 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 2 (ok)
-	errCode = 1024 (ok)
-	ListCanL = 009924E8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00992548	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : | -0.000000 || 1.000000 || -0.000000 || -0.000000 |
-		Next  :  |         1 ||         0 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 2260188546;
-----------------------------------------
-Logging session at compiled time : 03:02:52 Oct 28 2022
-
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 2878173657;
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 4142601437;
-In file list\list.cpp, function main, line 12, list named lol was dumped :
-	Errors :
-		[WRONG_HASH          ]
-	canL = 3735928559 (ok)
-	hash = 4142601437 (ok)
-	size = 1 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 2 (ok)
-	errCode = 1024 (ok)
-	ListCanL = 00A224E8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00A22548	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : | -0.000000 || 1.000000 || -0.000000 || -0.000000 |
-		Next  :  |         1 ||         0 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 1418737777;
-----------------------------------------
-Logging session at compiled time : 03:04:07 Oct 28 2022
-
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 1022867918;
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 2287295698;
-In file list\list.cpp, function main, line 12, list named lol was dumped :
-	Errors :
-		[WRONG_HASH          ]
-	canL = 3735928559 (ok)
-	hash = 2287295698 (ok)
-	size = 1 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 2 (ok)
-	errCode = 1024 (ok)
-	ListCanL = 00A124E8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00A12548	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : | -0.000000 ||  1.000000 || -0.000000 || -0.000000 |
-		Next  :  |         1 ||         0 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3858399334;
-----------------------------------------
-Logging session at compiled time : 03:07:07 Oct 28 2022
-
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 2964604036;
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 4229031816;
-In file list\list.cpp, function main, line 12, list named lol was dumped :
-	Errors :
-		[WRONG_HASH          ]
-	canL = 3735928559 (ok)
-	hash = 4229031816 (ok)
-	size = 1 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 2 (ok)
-	errCode = 1024 (ok)
-	ListCanL = 009324E8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00932548	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
-		Next  :  |         1 ||         0 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 1505168156;
-----------------------------------------
-Logging session at compiled time : 03:08:55 Oct 28 2022
-
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3548587007;
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 518047491;
-In file list\list.cpp, function main, line 12, list named lol was dumped :
-	Errors :
-		[WRONG_HASH          ]
-	canL = 3735928559 (ok)
-	hash = 518047491 (ok)
-	size = 1 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 2 (ok)
-	errCode = 1024 (ok)
-	ListCanL = 008424E8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00842548	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
-		Next  :  |         1 ||         0 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 2089151127;
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 2087276966;
-In file list\list.cpp, function main, line 16, list named lol was dumped :
-	Errors :
-		[WRONG_HASH          ]
-	canL = 3735928559 (ok)
-	hash = 2087276966 (ok)
-	size = 0 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 2 (ok)
-	errCode = 1024 (ok)
-	ListCanL = 008424E8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00842548	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
-		Next  :  |         1 ||         0 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 2087276966;
-----------------------------------------
-Logging session at compiled time : 03:08:55 Oct 28 2022
-
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3003472718;
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3003472718;
 In file list\list.cpp, function main, line 10, list named lol was dumped :
 	Errors :
 		[ok]
 	canL = 3735928559 (ok)
-	hash = 3003472718 (ok)
+	hash = 2723313236 (ok)
 	size = 0 (ok)
 	capacity = 4 (ok)
 	firstEmpty = 1 (ok)
 	errCode = 0 (ok)
-	ListCanL = 009D24E8	*ListCanL = 3735928559 (ok)
-	ListCanR = 009D2548	*ListCanR = 3545084735 (ok)
+	ListCanL = 00D215D8	*ListCanL = 3735928559 (ok)
+	ListCanR = 00D2162C	*ListCanR = 3545084735 (ok)
 	canR = 3545084735 (ok)
 	lol.List :
 		Values : |    POISON ||    POISON ||    POISON ||    POISON |
 		Next  :  |         0 ||        -2 ||        -3 ||         0 |
 		Prev  :  |         0 ||         0 ||         0 ||         0 |
 End of dump
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3003472718;
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 4267900498;
 In file list\list.cpp, function main, line 14, list named lol was dumped :
 	Errors :
 		[WRONG_HASH          ]
 	canL = 3735928559 (ok)
-	hash = 4267900498 (ok)
+	hash = 582572984 (ok)
 	size = 1 (ok)
 	capacity = 4 (ok)
 	firstEmpty = 2 (ok)
 	errCode = 1024 (ok)
-	ListCanL = 009D24E8	*ListCanL = 3735928559 (ok)
-	ListCanR = 009D2548	*ListCanR = 3545084735 (ok)
+	ListCanL = 00D215D8	*ListCanL = 3735928559 (ok)
+	ListCanR = 00D2162C	*ListCanR = 3545084735 (ok)
 	canR = 3545084735 (ok)
 	lol.List :
 		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
 		Next  :  |         1 ||         0 ||        -3 ||         0 |
 		Prev  :  |         0 ||         0 ||         0 ||         0 |
 End of dump
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 1544036838;
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 1542162677;
 In file list\list.cpp, function main, line 18, list named lol was dumped :
 	Errors :
 		[WRONG_HASH          ]
 	canL = 3735928559 (ok)
-	hash = 1542162677 (ok)
-	size = 0 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 2 (ok)
-	errCode = 1024 (ok)
-	ListCanL = 009D24E8	*ListCanL = 3735928559 (ok)
-	ListCanR = 009D2548	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
-		Next  :  |         1 ||         0 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 1542162677;
-----------------------------------------
-Logging session at compiled time : 03:10:51 Oct 28 2022
-
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 170603597;
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 170603597;
-In file list\list.cpp, function main, line 10, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 170603597 (ok)
-	size = 0 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 1 (ok)
-	errCode = 0 (ok)
-	ListCanL = 008E24E8	*ListCanL = 3735928559 (ok)
-	ListCanR = 008E2548	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||    POISON ||    POISON ||    POISON |
-		Next  :  |         0 ||        -2 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 170603597;
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 1435031377;
-In file list\list.cpp, function main, line 14, list named lol was dumped :
-	Errors :
-		[WRONG_HASH          ]
-	canL = 3735928559 (ok)
-	hash = 1435031377 (ok)
+	hash = 172463769 (ok)
 	size = 1 (ok)
-	capacity = 4 (ok)
+	capacity = 8 (ok)
 	firstEmpty = 2 (ok)
 	errCode = 1024 (ok)
-	ListCanL = 008E24E8	*ListCanL = 3735928559 (ok)
-	ListCanR = 008E2548	*ListCanR = 3545084735 (ok)
+	ListCanL = 00D22430	*ListCanL = 3735928559 (ok)
+	ListCanR = 00D224C4	*ListCanR = 3545084735 (ok)
 	canR = 3545084735 (ok)
 	lol.List :
-		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
-		Next  :  |         1 ||         0 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
+		Values : |    POISON ||  1.000000 ||    POISON ||    POISON ||    POISON ||    POISON ||    POISON ||    POISON |
+		Next  :  |         1 ||         0 ||        -3 ||        -4 ||        -5 ||        -6 ||        -7 ||         0 |
+		Prev  :  |         0 ||         0 ||         0 ||         0 ||         0 ||         0 ||         0 ||         0 |
 End of dump
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3006135013;
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3006135013;
-In file list\list.cpp, function main, line 18, list named lol was dumped :
-	Errors :
-		[WRONG_HASH          ]
-	canL = 3735928559 (ok)
-	hash = 3006135013 (ok)
-	size = 1 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 2 (ok)
-	errCode = 1024 (ok)
-	ListCanL = 008E24E8	*ListCanL = 3735928559 (ok)
-	ListCanR = 008E2548	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
-		Next  :  |         1 ||         0 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3006135013;
-----------------------------------------
-Logging session at compiled time : 03:11:22 Oct 28 2022
-
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 1594600685;
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 1594600685;
-In file list\list.cpp, function main, line 10, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 1594600685 (ok)
-	size = 0 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 1 (ok)
-	errCode = 0 (ok)
-	ListCanL = 007E24E8	*ListCanL = 3735928559 (ok)
-	ListCanR = 007E2548	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||    POISON ||    POISON ||    POISON |
-		Next  :  |         0 ||        -2 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 1594600685;
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 2859028465;
-In file list\list.cpp, function main, line 14, list named lol was dumped :
-	Errors :
-		[WRONG_HASH          ]
-	canL = 3735928559 (ok)
-	hash = 2859028465 (ok)
-	size = 1 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 2 (ok)
-	errCode = 1024 (ok)
-	ListCanL = 007E24E8	*ListCanL = 3735928559 (ok)
-	ListCanR = 007E2548	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
-		Next  :  |         1 ||         0 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 135164805;
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3165704321;
-In file list\list.cpp, function main, line 18, list named lol was dumped :
-	Errors :
-		[WRONG_HASH          ]
-	canL = 3735928559 (ok)
-	hash = 3165704321 (ok)
-	size = 0 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 1 (ok)
-	errCode = 1024 (ok)
-	ListCanL = 007E24E8	*ListCanL = 3735928559 (ok)
-	ListCanR = 007E2548	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||    POISON ||    POISON ||    POISON |
-		Next  :  |         0 ||        -2 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3165704321;
-----------------------------------------
-Logging session at compiled time : 03:11:39 Oct 28 2022
-
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 617499873;
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 617499873;
-In file list\list.cpp, function main, line 10, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 617499873 (ok)
-	size = 0 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 1 (ok)
-	errCode = 0 (ok)
-	ListCanL = 008024E8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00802548	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||    POISON ||    POISON ||    POISON |
-		Next  :  |         0 ||        -2 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 617499873;
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 1881927653;
-In file list\list.cpp, function main, line 14, list named lol was dumped :
-	Errors :
-		[WRONG_HASH          ]
-	canL = 3735928559 (ok)
-	hash = 1881927653 (ok)
-	size = 1 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 2 (ok)
-	errCode = 1024 (ok)
-	ListCanL = 008024E8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00802548	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
-		Next  :  |         1 ||         0 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3453031289;
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 2188603509;
-In file list\list.cpp, function main, line 18, list named lol was dumped :
-	Errors :
-		[WRONG_HASH          ]
-	canL = 3735928559 (ok)
-	hash = 2188603509 (ok)
-	size = 0 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 1 (ok)
-	errCode = 1024 (ok)
-	ListCanL = 008024E8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00802548	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||    POISON ||    POISON ||    POISON |
-		Next  :  |         0 ||        -2 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 2188603509;

@@ -147,7 +147,7 @@ unsigned int ListCountHash (List* list) {
 
 size_t ListErrCheck (List* list) {
 
-    if (list == NULL) return 0;
+    if (list == NULL) return -1;
 
     //checking for poison
     if (isPoison ( list->errCode  )) {

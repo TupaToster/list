@@ -1,253 +1,425 @@
 ----------------------------------------
-Logging session at compiled time : 16:06:37 Sep 24 2022
+Logging session at compiled time : 03:01:43 Oct 28 2022
 
-In file main.cpp, function main, line 12 : kok = 0064FEFC;
-In file main.cpp, function main, line 13 : temp = 14;
-In file main.cpp, function main, line 14 : aye = 2;
-In file main.cpp, function main, line 15 : innt = -1;
+In file list\list_funcs.cpp, function ListCtor, line 17 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+In file list\list_funcs.cpp, function ListCountHash, line 144 : hash = 2081342619;
+In file list\list_funcs.cpp, function ListCountHash, line 144 : hash = 2081342619;
+In file list\list.cpp, function main, line 12, list named lol was dumped :
+	Errors :
+		[ok]
+	canL = 3735928559 (ok)
+	hash = 2081342619 (ok)
+	size = 0 (ok)
+	capacity = 4 (ok)
+	firstEmpty = 1 (ok)
+	errCode = 0 (ok)
+	ListCanL = 00A42568	*ListCanL = 3735928559 (ok)
+	ListCanR = 00A425C8	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : | -0.000000 || -0.000000 || -0.000000 || -0.000000 |
+		Next  :  |         0 ||        -2 ||        -3 ||         0 |
+		Prev  :  |         0 ||         0 ||         0 ||         0 |
+End of dump
+In file list\list_funcs.cpp, function ListCountHash, line 144 : hash = 2081342619;
 ----------------------------------------
-Logging session at compiled time : 16:06:37 Sep 24 2022
+Logging session at compiled time : 03:02:02 Oct 28 2022
 
-In file main.cpp, function main, line 12 : kok = 0064FEFC;
-In file main.cpp, function main, line 13 : temp = 14;
-In file main.cpp, function main, line 14 : aye = 2;
-In file main.cpp, function main, line 15 : innt = -1;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3470713793;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3470713793;
+In file list\list.cpp, function main, line 12, list named lol was dumped :
+	Errors :
+		[ok]
+	canL = 3735928559 (ok)
+	hash = 3470713793 (ok)
+	size = 0 (ok)
+	capacity = 4 (ok)
+	firstEmpty = 1 (ok)
+	errCode = 0 (ok)
+	ListCanL = 008E24E8	*ListCanL = 3735928559 (ok)
+	ListCanR = 008E2548	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : | -0.000000 || -0.000000 || -0.000000 || -0.000000 |
+		Next  :  |         0 ||        -2 ||        -3 ||         0 |
+		Prev  :  |         0 ||         0 ||         0 ||         0 |
+End of dump
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3470713793;
 ----------------------------------------
-Logging session at compiled time : 16:08:12 Sep 24 2022
+Logging session at compiled time : 03:02:02 Oct 28 2022
 
-In file main.cpp, function main, line 13 : kok = <��A>;
-In file main.cpp, function main, line 14 : temp = 14;
-In file main.cpp, function main, line 15 : aye = 2;
-In file main.cpp, function main, line 16 : innt = -1;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3719624426;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 689084910;
+In file list\list.cpp, function main, line 12, list named lol was dumped :
+	Errors :
+		[WRONG_HASH          ]
+	canL = 3735928559 (ok)
+	hash = 689084910 (ok)
+	size = 1 (ok)
+	capacity = 4 (ok)
+	firstEmpty = 2 (ok)
+	errCode = 1024 (ok)
+	ListCanL = 009924E8	*ListCanL = 3735928559 (ok)
+	ListCanR = 00992548	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : | -0.000000 || 1.000000 || -0.000000 || -0.000000 |
+		Next  :  |         1 ||         0 ||        -3 ||         0 |
+		Prev  :  |         0 ||         0 ||         0 ||         0 |
+End of dump
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 2260188546;
 ----------------------------------------
-Logging session at compiled time : 16:18:01 Sep 24 2022
+Logging session at compiled time : 03:02:52 Oct 28 2022
 
-In file main.cpp, function main, line 12 : kok = <�A>;
-In file main.cpp, function main, line 13 : temp = 14;
-In file main.cpp, function main, line 14 : aye = 2;
-In file main.cpp, function main, line 15 : innt = -1;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 2878173657;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 4142601437;
+In file list\list.cpp, function main, line 12, list named lol was dumped :
+	Errors :
+		[WRONG_HASH          ]
+	canL = 3735928559 (ok)
+	hash = 4142601437 (ok)
+	size = 1 (ok)
+	capacity = 4 (ok)
+	firstEmpty = 2 (ok)
+	errCode = 1024 (ok)
+	ListCanL = 00A224E8	*ListCanL = 3735928559 (ok)
+	ListCanR = 00A22548	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : | -0.000000 || 1.000000 || -0.000000 || -0.000000 |
+		Next  :  |         1 ||         0 ||        -3 ||         0 |
+		Prev  :  |         0 ||         0 ||         0 ||         0 |
+End of dump
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 1418737777;
 ----------------------------------------
-Logging session at compiled time : 16:34:37 Sep 24 2022
+Logging session at compiled time : 03:04:07 Oct 28 2022
 
-In file main.cpp, function main, line 12 : kok = <�A>;
-In file main.cpp, function main, line 13 : temp = 14;
-In file main.cpp, function main, line 14 : aye = 2;
-In file main.cpp, function main, line 15 : innt = -1;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 1022867918;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 2287295698;
+In file list\list.cpp, function main, line 12, list named lol was dumped :
+	Errors :
+		[WRONG_HASH          ]
+	canL = 3735928559 (ok)
+	hash = 2287295698 (ok)
+	size = 1 (ok)
+	capacity = 4 (ok)
+	firstEmpty = 2 (ok)
+	errCode = 1024 (ok)
+	ListCanL = 00A124E8	*ListCanL = 3735928559 (ok)
+	ListCanR = 00A12548	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : | -0.000000 ||  1.000000 || -0.000000 || -0.000000 |
+		Next  :  |         1 ||         0 ||        -3 ||         0 |
+		Prev  :  |         0 ||         0 ||         0 ||         0 |
+End of dump
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3858399334;
 ----------------------------------------
-Logging session at compiled time : 16:36:57 Sep 24 2022
+Logging session at compiled time : 03:07:07 Oct 28 2022
 
-In file main.cpp, function main, line 12 : kok = <�A>;
-In file main.cpp, function main, line 13 : temp = 14;
-In file main.cpp, function main, line 14 : aye = 2;
-In file main.cpp, function main, line 15 : innt = -1;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 2964604036;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 4229031816;
+In file list\list.cpp, function main, line 12, list named lol was dumped :
+	Errors :
+		[WRONG_HASH          ]
+	canL = 3735928559 (ok)
+	hash = 4229031816 (ok)
+	size = 1 (ok)
+	capacity = 4 (ok)
+	firstEmpty = 2 (ok)
+	errCode = 1024 (ok)
+	ListCanL = 009324E8	*ListCanL = 3735928559 (ok)
+	ListCanR = 00932548	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
+		Next  :  |         1 ||         0 ||        -3 ||         0 |
+		Prev  :  |         0 ||         0 ||         0 ||         0 |
+End of dump
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 1505168156;
 ----------------------------------------
-Logging session at compiled time : 16:39:21 Sep 24 2022
+Logging session at compiled time : 03:08:55 Oct 28 2022
 
-In file main.cpp, function main, line 12 : kok = <pochemu ya nahuy>;
-In file main.cpp, function main, line 13 : temp = 14;
-In file main.cpp, function main, line 14 : aye = 2;
-In file main.cpp, function main, line 15 : innt = -1;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3548587007;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 518047491;
+In file list\list.cpp, function main, line 12, list named lol was dumped :
+	Errors :
+		[WRONG_HASH          ]
+	canL = 3735928559 (ok)
+	hash = 518047491 (ok)
+	size = 1 (ok)
+	capacity = 4 (ok)
+	firstEmpty = 2 (ok)
+	errCode = 1024 (ok)
+	ListCanL = 008424E8	*ListCanL = 3735928559 (ok)
+	ListCanR = 00842548	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
+		Next  :  |         1 ||         0 ||        -3 ||         0 |
+		Prev  :  |         0 ||         0 ||         0 ||         0 |
+End of dump
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 2089151127;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 2087276966;
+In file list\list.cpp, function main, line 16, list named lol was dumped :
+	Errors :
+		[WRONG_HASH          ]
+	canL = 3735928559 (ok)
+	hash = 2087276966 (ok)
+	size = 0 (ok)
+	capacity = 4 (ok)
+	firstEmpty = 2 (ok)
+	errCode = 1024 (ok)
+	ListCanL = 008424E8	*ListCanL = 3735928559 (ok)
+	ListCanR = 00842548	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
+		Next  :  |         1 ||         0 ||        -3 ||         0 |
+		Prev  :  |         0 ||         0 ||         0 ||         0 |
+End of dump
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 2087276966;
 ----------------------------------------
-Logging session at compiled time : 16:40:12 Sep 24 2022
+Logging session at compiled time : 03:08:55 Oct 28 2022
 
-In file main.cpp, function main, line 14 : kok = <pochemu tak>;
-In file main.cpp, function main, line 15 : temp = 14;
-In file main.cpp, function main, line 16 : aye = 2;
-In file main.cpp, function main, line 17 : innt = -1;
-In file main.cpp, function main, line 18 : what = ;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3003472718;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3003472718;
+In file list\list.cpp, function main, line 10, list named lol was dumped :
+	Errors :
+		[ok]
+	canL = 3735928559 (ok)
+	hash = 3003472718 (ok)
+	size = 0 (ok)
+	capacity = 4 (ok)
+	firstEmpty = 1 (ok)
+	errCode = 0 (ok)
+	ListCanL = 009D24E8	*ListCanL = 3735928559 (ok)
+	ListCanR = 009D2548	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : |    POISON ||    POISON ||    POISON ||    POISON |
+		Next  :  |         0 ||        -2 ||        -3 ||         0 |
+		Prev  :  |         0 ||         0 ||         0 ||         0 |
+End of dump
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3003472718;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 4267900498;
+In file list\list.cpp, function main, line 14, list named lol was dumped :
+	Errors :
+		[WRONG_HASH          ]
+	canL = 3735928559 (ok)
+	hash = 4267900498 (ok)
+	size = 1 (ok)
+	capacity = 4 (ok)
+	firstEmpty = 2 (ok)
+	errCode = 1024 (ok)
+	ListCanL = 009D24E8	*ListCanL = 3735928559 (ok)
+	ListCanR = 009D2548	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
+		Next  :  |         1 ||         0 ||        -3 ||         0 |
+		Prev  :  |         0 ||         0 ||         0 ||         0 |
+End of dump
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 1544036838;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 1542162677;
+In file list\list.cpp, function main, line 18, list named lol was dumped :
+	Errors :
+		[WRONG_HASH          ]
+	canL = 3735928559 (ok)
+	hash = 1542162677 (ok)
+	size = 0 (ok)
+	capacity = 4 (ok)
+	firstEmpty = 2 (ok)
+	errCode = 1024 (ok)
+	ListCanL = 009D24E8	*ListCanL = 3735928559 (ok)
+	ListCanR = 009D2548	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
+		Next  :  |         1 ||         0 ||        -3 ||         0 |
+		Prev  :  |         0 ||         0 ||         0 ||         0 |
+End of dump
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 1542162677;
 ----------------------------------------
-Logging session at compiled time : 16:40:41 Sep 24 2022
+Logging session at compiled time : 03:10:51 Oct 28 2022
 
-In file main.cpp, function main, line 15 : kok1 = 21;
-In file main.cpp, function main, line 16 : temp = 14;
-In file main.cpp, function main, line 17 : aye = 2;
-In file main.cpp, function main, line 18 : innt = -1;
-In file main.cpp, function main, line 19 : what = ;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 170603597;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 170603597;
+In file list\list.cpp, function main, line 10, list named lol was dumped :
+	Errors :
+		[ok]
+	canL = 3735928559 (ok)
+	hash = 170603597 (ok)
+	size = 0 (ok)
+	capacity = 4 (ok)
+	firstEmpty = 1 (ok)
+	errCode = 0 (ok)
+	ListCanL = 008E24E8	*ListCanL = 3735928559 (ok)
+	ListCanR = 008E2548	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : |    POISON ||    POISON ||    POISON ||    POISON |
+		Next  :  |         0 ||        -2 ||        -3 ||         0 |
+		Prev  :  |         0 ||         0 ||         0 ||         0 |
+End of dump
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 170603597;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 1435031377;
+In file list\list.cpp, function main, line 14, list named lol was dumped :
+	Errors :
+		[WRONG_HASH          ]
+	canL = 3735928559 (ok)
+	hash = 1435031377 (ok)
+	size = 1 (ok)
+	capacity = 4 (ok)
+	firstEmpty = 2 (ok)
+	errCode = 1024 (ok)
+	ListCanL = 008E24E8	*ListCanL = 3735928559 (ok)
+	ListCanR = 008E2548	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
+		Next  :  |         1 ||         0 ||        -3 ||         0 |
+		Prev  :  |         0 ||         0 ||         0 ||         0 |
+End of dump
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3006135013;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3006135013;
+In file list\list.cpp, function main, line 18, list named lol was dumped :
+	Errors :
+		[WRONG_HASH          ]
+	canL = 3735928559 (ok)
+	hash = 3006135013 (ok)
+	size = 1 (ok)
+	capacity = 4 (ok)
+	firstEmpty = 2 (ok)
+	errCode = 1024 (ok)
+	ListCanL = 008E24E8	*ListCanL = 3735928559 (ok)
+	ListCanR = 008E2548	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
+		Next  :  |         1 ||         0 ||        -3 ||         0 |
+		Prev  :  |         0 ||         0 ||         0 ||         0 |
+End of dump
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3006135013;
 ----------------------------------------
-Logging session at compiled time : 16:41:00 Sep 24 2022
+Logging session at compiled time : 03:11:22 Oct 28 2022
 
-In file main.cpp, function main, line 15 : kok1 = 21;
-In file main.cpp, function main, line 16 : temp = 14;
-In file main.cpp, function main, line 17 : aye = 2;
-In file main.cpp, function main, line 18 : innt = -1;
-In file main.cpp, function main, line 19 : what = ;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 1594600685;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 1594600685;
+In file list\list.cpp, function main, line 10, list named lol was dumped :
+	Errors :
+		[ok]
+	canL = 3735928559 (ok)
+	hash = 1594600685 (ok)
+	size = 0 (ok)
+	capacity = 4 (ok)
+	firstEmpty = 1 (ok)
+	errCode = 0 (ok)
+	ListCanL = 007E24E8	*ListCanL = 3735928559 (ok)
+	ListCanR = 007E2548	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : |    POISON ||    POISON ||    POISON ||    POISON |
+		Next  :  |         0 ||        -2 ||        -3 ||         0 |
+		Prev  :  |         0 ||         0 ||         0 ||         0 |
+End of dump
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 1594600685;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 2859028465;
+In file list\list.cpp, function main, line 14, list named lol was dumped :
+	Errors :
+		[WRONG_HASH          ]
+	canL = 3735928559 (ok)
+	hash = 2859028465 (ok)
+	size = 1 (ok)
+	capacity = 4 (ok)
+	firstEmpty = 2 (ok)
+	errCode = 1024 (ok)
+	ListCanL = 007E24E8	*ListCanL = 3735928559 (ok)
+	ListCanR = 007E2548	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
+		Next  :  |         1 ||         0 ||        -3 ||         0 |
+		Prev  :  |         0 ||         0 ||         0 ||         0 |
+End of dump
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 135164805;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3165704321;
+In file list\list.cpp, function main, line 18, list named lol was dumped :
+	Errors :
+		[WRONG_HASH          ]
+	canL = 3735928559 (ok)
+	hash = 3165704321 (ok)
+	size = 0 (ok)
+	capacity = 4 (ok)
+	firstEmpty = 1 (ok)
+	errCode = 1024 (ok)
+	ListCanL = 007E24E8	*ListCanL = 3735928559 (ok)
+	ListCanR = 007E2548	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : |    POISON ||    POISON ||    POISON ||    POISON |
+		Next  :  |         0 ||        -2 ||        -3 ||         0 |
+		Prev  :  |         0 ||         0 ||         0 ||         0 |
+End of dump
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3165704321;
 ----------------------------------------
-Logging session at compiled time : 16:41:38 Sep 24 2022
+Logging session at compiled time : 03:11:39 Oct 28 2022
 
-In file main.cpp, function main, line 15 : kok1 = 21;
-In file main.cpp, function main, line 16 : temp = 14;
-In file main.cpp, function main, line 17 : aye = 2;
-In file main.cpp, function main, line 18 : innt = -1;
-In file main.cpp, function main, line 19 : what = ;
-----------------------------------------
-Logging session at compiled time : 16:42:32 Sep 24 2022
-
-In file main.cpp, function main, line 14 : kok1 = 21;
-In file main.cpp, function main, line 15 : temp = 14;
-In file main.cpp, function main, line 16 : aye = 2;
-In file main.cpp, function main, line 17 : innt = -1;
-In file main.cpp, function main, line 18 : what = -0.000000;
-----------------------------------------
-Logging session at compiled time : 16:43:13 Sep 24 2022
-
-In file main.cpp, function main, line 14 : kok1 = 21;
-In file main.cpp, function main, line 15 : temp = 14;
-In file main.cpp, function main, line 16 : aye = 2;
-In file main.cpp, function main, line 17 : innt = -1;
-In file main.cpp, function main, line 18 : what = -0.000000;
-----------------------------------------
-Logging session at compiled time : 16:43:13 Sep 24 2022
-
-In file main.cpp, function main, line 14 : kok1 = 21;
-In file main.cpp, function main, line 15 : temp = 14;
-In file main.cpp, function main, line 16 : aye = 2;
-In file main.cpp, function main, line 17 : innt = -1;
-In file main.cpp, function main, line 18 : what = -0.000000;
-----------------------------------------
-Logging session at compiled time : 16:43:45 Sep 24 2022
-
-In file main.cpp, function main, line 14 : kok1 = 21;
-In file main.cpp, function main, line 15 : temp = 14;
-In file main.cpp, function main, line 16 : aye = 2;
-In file main.cpp, function main, line 17 : innt = -1;
-In file main.cpp, function main, line 18 : what = ;
-----------------------------------------
-Logging session at compiled time : 16:44:11 Sep 24 2022
-
-In file main.cpp, function main, line 14 : kok1 = 21;
-In file main.cpp, function main, line 15 : temp = 14;
-In file main.cpp, function main, line 16 : aye = 2;
-In file main.cpp, function main, line 17 : innt = -1;
-In file main.cpp, function main, line 18 : what = -0.000000;
-----------------------------------------
-Logging session at compiled time : 16:44:56 Sep 24 2022
-
-In file main.cpp, function main, line 14 : kok1 = 21;
-In file main.cpp, function main, line 15 : temp = 14;
-In file main.cpp, function main, line 16 : aye = 2;
-In file main.cpp, function main, line 17 : innt = -1;
-In file main.cpp, function main, line 18 : what = -0.000000;
-----------------------------------------
-Logging session at compiled time : 16:45:07 Sep 24 2022
-
-In file main.cpp, function main, line 14 : kok1 = 21;
-In file main.cpp, function main, line 15 : temp = 14;
-In file main.cpp, function main, line 16 : aye = 2;
-In file main.cpp, function main, line 17 : innt = -1;
-In file main.cpp, function main, line 18 : what = -0.000000;
-----------------------------------------
-Logging session at compiled time : 16:47:00 Sep 24 2022
-
-In file main.cpp, function main, line 14 : kok1 = 21;
-In file main.cpp, function main, line 15 : temp = 14;
-In file main.cpp, function main, line 16 : aye = 2;
-In file main.cpp, function main, line 17 : innt = -1;
-In file main.cpp, function main, line 18 : what = ;
-----------------------------------------
-Logging session at compiled time : 16:47:10 Sep 24 2022
-
-In file main.cpp, function main, line 14 : kok1 = 21;
-In file main.cpp, function main, line 15 : temp = 14;
-In file main.cpp, function main, line 16 : aye = 2;
-In file main.cpp, function main, line 17 : innt = -1;
-In file main.cpp, function main, line 18 : what = 1.123435;
-----------------------------------------
-Logging session at compiled time : 16:47:23 Sep 24 2022
-
-In file main.cpp, function main, line 14 : kok1 = 21;
-In file main.cpp, function main, line 15 : temp = 14;
-In file main.cpp, function main, line 16 : aye = 2;
-In file main.cpp, function main, line 17 : innt = -1;
-In file main.cpp, function main, line 18 : what = 1.123435;
-----------------------------------------
-Logging session at compiled time : 16:47:35 Sep 24 2022
-
-In file main.cpp, function main, line 14 : kok1 = 21;
-In file main.cpp, function main, line 15 : temp = 14;
-In file main.cpp, function main, line 16 : aye = 2;
-In file main.cpp, function main, line 17 : innt = -1;
-In file main.cpp, function main, line 18 : what = -1.4458e-232;
-----------------------------------------
-Logging session at compiled time : 16:47:35 Sep 24 2022
-
-In file main.cpp, function main, line 14 : kok1 = 21;
-In file main.cpp, function main, line 15 : temp = 14;
-In file main.cpp, function main, line 16 : aye = 2;
-In file main.cpp, function main, line 17 : innt = -1;
-In file main.cpp, function main, line 18 : what = -1.4458e-232;
-----------------------------------------
-Logging session at compiled time : 16:47:54 Sep 24 2022
-
-In file main.cpp, function main, line 14 : kok1 = 21;
-In file main.cpp, function main, line 15 : temp = 14;
-In file main.cpp, function main, line 16 : aye = 2;
-In file main.cpp, function main, line 17 : innt = -1;
-In file main.cpp, function main, line 18 : what = ;
-----------------------------------------
-Logging session at compiled time : 16:48:31 Sep 24 2022
-
-In file main.cpp, function main, line 14 : kok1 = 21;
-In file main.cpp, function main, line 15 : temp = 14;
-In file main.cpp, function main, line 16 : aye = 2;
-In file main.cpp, function main, line 17 : innt = -1;
-In file main.cpp, function main, line 18 : what = 1.123435;
-----------------------------------------
-Logging session at compiled time : 13:31:09 Sep 26 2022
-
-In file main.cpp, function main, line 15 : lol = 666666666666FFE6FFF654000;
-In file main.cpp, function main, line 16 : kok = <pochemu tak>;
-In file main.cpp, function main, line 17 : kok1 = 21;
-In file main.cpp, function main, line 18 : temp = 14;
-In file main.cpp, function main, line 19 : aye = 2;
-In file main.cpp, function main, line 20 : innt = -1;
-In file main.cpp, function main, line 21 : what = ;
-----------------------------------------
-Logging session at compiled time : 13:32:03 Sep 26 2022
-
-In file main.cpp, function main, line 15 : lol = 666666666666FFE6FFF654000;
-In file main.cpp, function main, line 16 : kok = <pochemu tak>;
-In file main.cpp, function main, line 17 : kok1 = 21;
-In file main.cpp, function main, line 18 : temp = 14;
-In file main.cpp, function main, line 19 : aye = 2;
-In file main.cpp, function main, line 20 : innt = -1;
-In file main.cpp, function main, line 21 : what = 1.123435;
-----------------------------------------
-Logging session at compiled time : 13:32:52 Sep 26 2022
-
-In file main.cpp, function main, line 15 : lol =  <UNDEFINED_FORMAT> 66 <UNDEFINED_FORMAT> 66 <UNDEFINED_FORMAT> 66 <UNDEFINED_FORMAT> 66 <UNDEFINED_FORMAT> 66 <UNDEFINED_FORMAT> 66 <UNDEFINED_FORMAT> FFE6 <UNDEFINED_FORMAT> FFF6 <UNDEFINED_FORMAT> 5 <UNDEFINED_FORMAT> 40 <UNDEFINED_FORMAT> 0 <UNDEFINED_FORMAT> 0;
-In file main.cpp, function main, line 16 : kok = <pochemu tak>;
-In file main.cpp, function main, line 17 : kok1 = 21;
-In file main.cpp, function main, line 18 : temp = 14;
-In file main.cpp, function main, line 19 : aye = 2;
-In file main.cpp, function main, line 20 : innt = -1;
-In file main.cpp, function main, line 21 : what = 1.123435;
-----------------------------------------
-Logging session at compiled time : 13:33:56 Sep 26 2022
-
-In file main.cpp, function main, line 15 : lol = 666666666666FFE6FFF654000 :: __UNDEFINED_FORMAT__;
-In file main.cpp, function main, line 16 : kok = <pochemu tak>;
-In file main.cpp, function main, line 17 : kok1 = 21;
-In file main.cpp, function main, line 18 : temp = 14;
-In file main.cpp, function main, line 19 : aye = 2;
-In file main.cpp, function main, line 20 : innt = -1;
-In file main.cpp, function main, line 21 : what = 1.123435;
-----------------------------------------
-Logging session at compiled time : 13:35:00 Sep 26 2022
-
-In file main.cpp, function main, line 15 : lol = 666666666666FFE6FFF654000 :: __UNDEFINED_FORMAT__:sizeof() = 12;
-In file main.cpp, function main, line 16 : kok = <pochemu tak>;
-In file main.cpp, function main, line 17 : kok1 = 21;
-In file main.cpp, function main, line 18 : temp = 14;
-In file main.cpp, function main, line 19 : aye = 2;
-In file main.cpp, function main, line 20 : innt = -1;
-In file main.cpp, function main, line 21 : what = 1.123435;
-----------------------------------------
-Logging session at compiled time : 13:35:38 Sep 26 2022
-
-In file main.cpp, function main, line 15 : lol = 666666666666FFE6FFF654000 :: UNDEFINED_FORMAT : sizeof() = 12;
-In file main.cpp, function main, line 16 : kok = <pochemu tak>;
-In file main.cpp, function main, line 17 : kok1 = 21;
-In file main.cpp, function main, line 18 : temp = 14;
-In file main.cpp, function main, line 19 : aye = 2;
-In file main.cpp, function main, line 20 : innt = -1;
-In file main.cpp, function main, line 21 : what = 1.123435;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 617499873;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 617499873;
+In file list\list.cpp, function main, line 10, list named lol was dumped :
+	Errors :
+		[ok]
+	canL = 3735928559 (ok)
+	hash = 617499873 (ok)
+	size = 0 (ok)
+	capacity = 4 (ok)
+	firstEmpty = 1 (ok)
+	errCode = 0 (ok)
+	ListCanL = 008024E8	*ListCanL = 3735928559 (ok)
+	ListCanR = 00802548	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : |    POISON ||    POISON ||    POISON ||    POISON |
+		Next  :  |         0 ||        -2 ||        -3 ||         0 |
+		Prev  :  |         0 ||         0 ||         0 ||         0 |
+End of dump
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 617499873;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 1881927653;
+In file list\list.cpp, function main, line 14, list named lol was dumped :
+	Errors :
+		[WRONG_HASH          ]
+	canL = 3735928559 (ok)
+	hash = 1881927653 (ok)
+	size = 1 (ok)
+	capacity = 4 (ok)
+	firstEmpty = 2 (ok)
+	errCode = 1024 (ok)
+	ListCanL = 008024E8	*ListCanL = 3735928559 (ok)
+	ListCanR = 00802548	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
+		Next  :  |         1 ||         0 ||        -3 ||         0 |
+		Prev  :  |         0 ||         0 ||         0 ||         0 |
+End of dump
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 3453031289;
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 2188603509;
+In file list\list.cpp, function main, line 18, list named lol was dumped :
+	Errors :
+		[WRONG_HASH          ]
+	canL = 3735928559 (ok)
+	hash = 2188603509 (ok)
+	size = 0 (ok)
+	capacity = 4 (ok)
+	firstEmpty = 1 (ok)
+	errCode = 1024 (ok)
+	ListCanL = 008024E8	*ListCanL = 3735928559 (ok)
+	ListCanR = 00802548	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : |    POISON ||    POISON ||    POISON ||    POISON |
+		Next  :  |         0 ||        -2 ||        -3 ||         0 |
+		Prev  :  |         0 ||         0 ||         0 ||         0 |
+End of dump
+In file list\list_funcs.cpp, function ListCountHash, line 142 : hash = 2188603509;

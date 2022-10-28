@@ -1,4 +1,3 @@
-#pragma once
 #pragma GCC diagnostic ignored "-Wcast-qual"
 #pragma GCC diagnostic ignored "-Wformat="
 #pragma GCC diagnostic ignored "-Wsign-compare"

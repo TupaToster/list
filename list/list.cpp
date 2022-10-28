@@ -8,12 +8,12 @@ int main (int argc, char* argv[]) {
     ListCtor (&lol);
 
     ListDump (lol);
-
-    ListPushElement (&lol, 1, 1);
-
+    ListPush (&lol, 1, 1);
     ListDump (lol);
-
-    ListResizeUp (&lol);
-
+    ListPush (&lol, 2, 2);
+    ListDump (lol);
+    ListPush (&lol, 3, 3);
+    ListDump (lol);
+    ListPop (&lol, 1);
     ListDump (lol);
 }

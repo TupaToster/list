@@ -90,12 +90,8 @@ void ListDumpInside (List* list, const char* ListName, const char* fileName, con
 
 void ListLogErrors (List* list);
 
-int ListPushElement (List* list, elem_t val, int pos);
+int ListPush (List* list, elem_t val, int pos);
 
-elem_t ListPopElement (List* list, int pos);
+elem_t ListPop (List* list, int pos);
 
 void ListResize (List* list);
-
-void ListResizeUp (List* list);
-
-void ListResizeDown (List* list);

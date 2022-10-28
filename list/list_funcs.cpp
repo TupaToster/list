@@ -32,11 +32,11 @@ void ListCtor (List* list) {
 
     NodCtor (list->List);
 
-    for (int i = 1; i < list->capacity; i++) {
+    for (int i = 1; i < list->capacity + 1; i++) {
 
         NodCtor (list->List + i);
         setPoison (list->List[i].value);
-        list->List[i].next = (i + 1 == list->capacity) ? 0 : -(i + 1);
+        list->List[i].next = (i == list->capacity) ? 0 : -(i + 1);
     }
 
     ListCountHash (list);
@@ -269,7 +269,8 @@ void ListDumpInside (List* list, const char* ListName, const char* fileName, con
     if (isPoison (list->List) or isPoison (list->capacity)) goto Return;
 
     flogprintf ("\t" "%s.List :" "\n" "\t\t" "Values : ", ListName);
-    for (int i = 0; i < list->capacity; i++) {
+    flogprintf ("| NULL_ELEM |");
+    for (int i = 1; i < list->capacity + 1; i++) {
 
         if (isPoison (list->List[i].value)) flogprintf ("|    POISON |")
         else flogprintf ("| " elem_t_F " |", list->List[i].value)
@@ -277,14 +278,14 @@ void ListDumpInside (List* list, const char* ListName, const char* fileName, con
 
     flogprintf ("\n" "\t\t" "Next  :  ");
 
-    for (int i = 0; i < list->capacity; i++) {
+    for (int i = 0; i < list->capacity + 1; i++) {
 
         flogprintf ("| %9d |", list->List[i].next);
     }
 
     flogprintf ("\n" "\t\t" "Prev  :  ");
 
-    for (int i = 0; i < list->capacity; i++) {
+    for (int i = 0; i < list->capacity + 1; i++) {
 
         flogprintf ("| %9d |", list->List[i].prev);
     }
@@ -319,7 +320,7 @@ void ListLogErrors (List* list) {
         for (int i = 0; i < iter; i++) flogprintf ("%s", names[i])
 }
 
-int ListPushElement (List* list, elem_t val, int pos) {
+int ListPush (List* list, elem_t val, int pos) {
 
     assert (list != NULL);
     assert (pos > 0);
@@ -338,30 +339,23 @@ int ListPushElement (List* list, elem_t val, int pos) {
 
     for (int i = 1; i < pos; i++) {
 
-        if (list->List[index].next == 0) break;
+        if (index == 0) break;
 
         index = list->List[index].next;
     }
 
-    if (list->List[index].next == 0) {
+    list->List[currentElem].next = index;
+    list->List[currentElem].prev = list->List[index].prev;
+    list->List[list->List[index].prev].next = currentElem;
+    list->List[index].prev = currentElem;
 
-        list->List[index].next = currentElem;
-        list->List[currentElem].prev = index;
-        list->List[currentElem].next = 0;
-    }
-    else {
-
-        list->List[currentElem].next = list->List[index].next;
-        list->List[index].next = currentElem;
-        list->List[currentElem].prev = index;
-    }
 
     ListCountHash (list);
 
     return currentElem;
 }
 
-elem_t ListPopElement (List* list, int pos) {
+elem_t ListPop (List* list, int pos) {
 
     assert (list != NULL);
 
@@ -398,23 +392,11 @@ void ListResize (List* list) {
 
     assert (list != NULL);
 
-    if (list->firstEmpty == 0) {
-
-        ListResizeUp (list);
-    }
-    else if (list->size <= list->capacity * 3 / 8 and list->capacity > 4) {
-
-        //ListResizeDown (list);
-    }
-}
-
-void ListResizeUp (List* list) {
-
-    assert (list != NULL);
-
     ListVerifyHash (list);
 
-    list->capacity *= 2;
+    if (list->firstEmpty == 0) list->capacity *= 2;
+    else if (list->size <= list->capacity * 3 / 8 and list->capacity > 4) list->capacity /= 2;
+    else return;
 
     Nod* temp = (Nod*) calloc ((list->capacity + 1) * sizeof (Nod) + 2 * sizeof (unsigned int), sizeof (char));
 

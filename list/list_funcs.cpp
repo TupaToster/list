@@ -320,66 +320,46 @@ void ListLogErrors (List* list) {
         for (int i = 0; i < iter; i++) flogprintf ("%s", names[i])
 }
 
-int ListPush (List* list, elem_t val, int pos) {
+int ListPush (List* list, elem_t val, int prev) {
 
     assert (list != NULL);
-    assert (pos > 0);
+    assert (prev >= 0);
 
     ListVerifyHash (list);
 
     ListResize (list);
 
-    list->size++;
-    int currentElem  = list->firstEmpty;
-    list->firstEmpty = -list->List[currentElem].next;
+    list->size ++;
 
-    list->List[currentElem].value = val;
+    int currElem = list->firstEmpty;
+    list->List[currElem].value = val;
+    list->firstEmpty = -list->List[currElem].next;
 
-    int index = list->List[0].next;
-
-    for (int i = 1; i < pos; i++) {
-
-        if (index == 0) break;
-
-        index = list->List[index].next;
-    }
-
-    list->List[currentElem].next = index;
-    list->List[currentElem].prev = list->List[index].prev;
-    list->List[list->List[index].prev].next = currentElem;
-    list->List[index].prev = currentElem;
-
+    list->List[currElem].prev                  = prev;
+    list->List[currElem].next                  = list->List[prev].next;
+    list->List[prev].next                      = currElem;
+    list->List[list->List[currElem].next].prev = currElem;
 
     ListCountHash (list);
 
-    return currentElem;
+    return currElem;
 }
 
 elem_t ListPop (List* list, int pos) {
 
     assert (list != NULL);
-
+    assert (pos > 0);
     ListVerifyHash (list);
 
-    int index = list->List[0].next;
+    elem_t retVal = list->List[pos].value;
+    setPoison (list->List[pos].value);
 
-    for (int i = 1; i < pos; i++) {
+    list->List[list->List[pos].next].prev = list->List[pos].prev;
+    list->List[list->List[pos].prev].next = list->List[pos].next;
 
-        if (list->List[index].next == 0) return list->List[0].value;
-
-        index = list->List[index].next;
-    }
-
-    list->size--;
-
-    list->List[list->List[index].next].prev = list->List[index].prev;
-    list->List[list->List[index].prev].next = list->List[index].next;
-
-    list->List[index].next = -list->firstEmpty;
-    list->firstEmpty = index;
-
-    elem_t retVal = list->List[index].value;
-    setPoison (list->List[index].value);
+    list->List[pos].prev = 0;
+    list->List[pos].next = -list->firstEmpty;
+    list->firstEmpty = pos;
 
     ListCountHash (list);
 
@@ -420,6 +400,8 @@ void ListResize (List* list) {
         temp[i-1].next = i;
     }
 
+    list->firstEmpty = list->size + 1;
+
     for (int i = list->size + 1; i < list->capacity + 1; i++) {
 
         setPoison (temp[i].value);
@@ -432,4 +414,23 @@ void ListResize (List* list) {
     free (previousPtr);
 
     ListCountHash (list);
+}
+
+int GetRealIndex (List* list, int LogicalNumber, bool DoUReallyWantIt, char* confirmationOfResponsibility) {
+
+    assert (list != NULL);
+
+    if (!DoUReallyWantIt) return -1;
+    if (strcmp (confirmationOfResponsibility, userAgreement)) return -1;
+
+    int index = list->List[0].next;
+
+    for (int i = 1; i < LogicalNumber; i++) {
+
+        if (index == 0) break;
+
+        index = list->List[index].next;
+    }
+
+    return index;
 }

@@ -26,6 +26,8 @@ typedef double elem_t;
 
 #define isPoison(var) isPoisonInside (&var, sizeof (var)) ///< Macros for checking for poison
 
+#define userAgreement "I (user) aggree that i fully understand effect that call of this function will take on program's efficiency and still wish to proceed. Therefore I confirm, that no claims about code inefficiency will be made by me."
+
 #ifndef NDEBUG
 #define ListDump(list) ListDumpInside (&list, #list, __FILE__, __FUNCTION__, __LINE__) ///< List dump macros
 #else
@@ -140,3 +142,12 @@ elem_t ListPop (List* list, int pos);
 /// @brief Resizes List if it's time to do it
 /// @param list List to resize
 void ListResize (List* list);
+
+/// @brief Finds an element by logical number
+/// @param list Ptr to list variable
+/// @param LogicalNumber Number of elem in list
+/// @param step Step to move ptr for
+/// @param DoUReallyWantIt Do u really want it? (true/false)
+/// @param confirmationOfResponsibility Look up userAgreement
+/// @return index of an element or -1 if u failed as a human
+int GetRealIndex (List* list, int LogicalNumber, int step, bool DoUReallyWantIt, char* confirmationOfResponsibility);

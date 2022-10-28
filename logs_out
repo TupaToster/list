@@ -1,1045 +1,224 @@
 ----------------------------------------
-Logging session at compiled time : 13:36:03 Oct 28 2022
+Logging session at compiled time : 14:46:10 Oct 28 2022
 
-In file list\list.cpp, function main, line 10, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 3947339874 (ok)
-	size = 0 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 1 (ok)
-	errCode = 0 (ok)
-	ListCanL = 007C15D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 007C162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||    POISON ||    POISON ||    POISON |
-		Next  :  |         0 ||        -2 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list_funcs.cpp, function ListPush, line 346 : index = 0;
-In file list\list.cpp, function main, line 12, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 2514719159 (ok)
-	size = 1 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 2 (ok)
-	errCode = 0 (ok)
-	ListCanL = 007C15D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 007C162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
-		Next  :  |         0 ||         1 ||        -3 ||         0 |
-		Prev  :  |         1 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list_funcs.cpp, function ListPush, line 346 : index = 0;
-In file list\list.cpp, function main, line 14, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 892231103 (ok)
-	size = 2 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 3 (ok)
-	errCode = 0 (ok)
-	ListCanL = 007C15D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 007C162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||    POISON |
-		Next  :  |         0 ||         1 ||         2 ||         0 |
-		Prev  :  |         2 ||         0 ||         1 ||         0 |
-End of dump
-In file list\list_funcs.cpp, function ListPush, line 346 : index = 0;
-In file list\list.cpp, function main, line 17, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 1201241815 (ok)
-	size = 3 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 0 (ok)
-	errCode = 0 (ok)
-	ListCanL = 007C15D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 007C162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||  1.000000 |
-		Next  :  |         0 ||         1 ||         2 ||         3 |
-		Prev  :  |         3 ||         0 ||         1 ||         2 |
-End of dump
+In file list\list.cpp, function main, line 6 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
 ----------------------------------------
-Logging session at compiled time : 13:39:43 Oct 28 2022
+Logging session at compiled time : 14:45:04 Oct 28 2022
 
-In file list\list.cpp, function main, line 10, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 3712165376 (ok)
-	size = 0 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 1 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00D615D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00D6162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||    POISON ||    POISON ||    POISON |
-		Next  :  |         0 ||        -2 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
-End of dump
 In file list\list.cpp, function main, line 12, list named lol was dumped :
 	Errors :
 		[ok]
 	canL = 3735928559 (ok)
-	hash = 2279544661 (ok)
-	size = 1 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 2 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00D615D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00D6162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
-		Next  :  |         0 ||         1 ||        -3 ||         0 |
-		Prev  :  |         1 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 14, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 657056605 (ok)
+	hash = 3650033306 (ok)
 	size = 2 (ok)
 	capacity = 4 (ok)
 	firstEmpty = 3 (ok)
 	errCode = 0 (ok)
-	ListCanL = 00D615D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00D6162C	*ListCanR = 3545084735 (ok)
+	ListCanL = 00DA15D8	*ListCanL = 3735928559 (ok)
+	ListCanR = 00DA162C	*ListCanR = 3545084735 (ok)
 	canR = 3545084735 (ok)
 	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||    POISON |
-		Next  :  |         0 ||         1 ||         2 ||         0 |
-		Prev  :  |         2 ||         0 ||         1 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 17, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 966067317 (ok)
-	size = 3 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 0 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00D615D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00D6162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||  1.000000 |
-		Next  :  |         0 ||         1 ||         2 ||         3 |
-		Prev  :  |         3 ||         0 ||         1 ||         2 |
-End of dump
-----------------------------------------
-Logging session at compiled time : 13:44:31 Oct 28 2022
-
-In file list\list.cpp, function main, line 10, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 1741917113 (ok)
-	size = 0 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 1 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00C115D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00C1162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||    POISON ||    POISON ||    POISON |
-		Next  :  |         0 ||        -2 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 12, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 309296398 (ok)
-	size = 1 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 2 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00C115D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00C1162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
-		Next  :  |         0 ||         1 ||        -3 ||         0 |
-		Prev  :  |         1 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 14, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 2981775638 (ok)
-	size = 2 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 3 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00C115D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00C1162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||    POISON |
-		Next  :  |         0 ||         1 ||         2 ||         0 |
-		Prev  :  |         2 ||         0 ||         1 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 17, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 3290786350 (ok)
-	size = 3 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 0 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00C115D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00C1162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||  1.000000 |
-		Next  :  |         0 ||         1 ||         2 ||         3 |
-		Prev  :  |         3 ||         0 ||         1 ||         2 |
-End of dump
-----------------------------------------
-Logging session at compiled time : 13:46:01 Oct 28 2022
-
-In file list\list.cpp, function main, line 10, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 2398666534 (ok)
-	size = 0 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 1 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00C815D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00C8162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||    POISON ||    POISON ||    POISON |
-		Next  :  |         0 ||        -2 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 12, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 2109778298 (ok)
-	size = 1 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 2 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00C815D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00C8162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
-		Next  :  |         0 ||         0 ||        -3 ||         0 |
-		Prev  :  |         1 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 14, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 1911952384 (ok)
-	size = 2 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 3 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00C815D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00C8162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||    POISON |
-		Next  :  |         0 ||         0 ||         0 ||         0 |
-		Prev  :  |         2 ||         0 ||         1 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 17, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 440399253 (ok)
-	size = 3 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 0 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00C815D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00C8162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||  1.000000 |
-		Next  :  |         0 ||         0 ||         0 ||         0 |
-		Prev  :  |         3 ||         0 ||         1 ||         2 |
-End of dump
-----------------------------------------
-Logging session at compiled time : 13:49:29 Oct 28 2022
-
-In file list\list.cpp, function main, line 10, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 2435946619 (ok)
-	size = 0 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 1 (ok)
-	errCode = 0 (ok)
-	ListCanL = 008715D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 0087162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||    POISON ||    POISON ||    POISON |
-		Next  :  |         0 ||        -2 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 12, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 39448592 (ok)
-	size = 1 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 2 (ok)
-	errCode = 0 (ok)
-	ListCanL = 008715D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 0087162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
-		Next  :  |         1 ||         0 ||        -3 ||         0 |
-		Prev  :  |         1 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 14, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 1849125016 (ok)
-	size = 2 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 3 (ok)
-	errCode = 0 (ok)
-	ListCanL = 008715D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 0087162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||    POISON |
-		Next  :  |         1 ||         2 ||         0 ||         0 |
-		Prev  :  |         2 ||         0 ||         1 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 17, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 388062320 (ok)
-	size = 3 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 0 (ok)
-	errCode = 0 (ok)
-	ListCanL = 008715D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 0087162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||  1.000000 |
-		Next  :  |         1 ||         2 ||         3 ||         0 |
-		Prev  :  |         3 ||         0 ||         1 ||         2 |
-End of dump
-----------------------------------------
-Logging session at compiled time : 13:49:29 Oct 28 2022
-
-In file list\list.cpp, function main, line 10, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 3394974691 (ok)
-	size = 0 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 1 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00BF15D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00BF162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||    POISON ||    POISON ||    POISON |
-		Next  :  |         0 ||        -2 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 12, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 998476664 (ok)
-	size = 1 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 2 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00BF15D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00BF162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
-		Next  :  |         1 ||         0 ||        -3 ||         0 |
-		Prev  :  |         1 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 14, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 3607233536 (ok)
-	size = 2 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 3 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00BF15D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00BF162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||    POISON |
-		Next  :  |         2 ||         0 ||         1 ||         0 |
-		Prev  :  |         1 ||         2 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 17, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 2454648792 (ok)
-	size = 3 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 0 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00BF15D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00BF162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||  1.000000 |
-		Next  :  |         3 ||         0 ||         1 ||         2 |
-		Prev  :  |         1 ||         2 ||         3 ||         0 |
-End of dump
-----------------------------------------
-Logging session at compiled time : 13:49:29 Oct 28 2022
-
-In file list\list.cpp, function main, line 10, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 3719621393 (ok)
-	size = 0 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 1 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00C915D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00C9162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||    POISON ||    POISON ||    POISON |
-		Next  :  |         0 ||        -2 ||        -3 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 12, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 1323123366 (ok)
-	size = 1 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 2 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00C915D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00C9162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||    POISON ||    POISON |
-		Next  :  |         1 ||         0 ||        -3 ||         0 |
-		Prev  :  |         1 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 14, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 3931880238 (ok)
-	size = 2 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 3 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00C915D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00C9162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||    POISON |
-		Next  :  |         2 ||         0 ||         1 ||         0 |
-		Prev  :  |         1 ||         2 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 16, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 2779295494 (ok)
-	size = 3 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 0 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00C915D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00C9162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||  1.000000 |
-		Next  :  |         3 ||         0 ||         1 ||         2 |
-		Prev  :  |         1 ||         2 ||         3 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 18, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 3931880238 (ok)
-	size = 2 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 3 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00C915D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00C9162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||    POISON |
-		Next  :  |         2 ||         0 ||         1 ||         0 |
-		Prev  :  |         1 ||         2 ||         0 ||         0 |
-End of dump
-----------------------------------------
-Logging session at compiled time : 13:53:05 Oct 28 2022
-
-In file list\list.cpp, function main, line 10, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 2760593321 (ok)
-	size = 0 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 1 (ok)
-	errCode = 0 (ok)
-	ListCanL = 009115D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 0091162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||    POISON ||    POISON ||    POISON ||  0.000000 |
-		Next  :  |         0 ||        -2 ||        -3 ||         0 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 12, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 364095294 (ok)
-	size = 1 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 2 (ok)
-	errCode = 0 (ok)
-	ListCanL = 009115D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 0091162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||    POISON ||    POISON ||  0.000000 |
-		Next  :  |         1 ||         0 ||        -3 ||         0 ||         0 |
-		Prev  :  |         1 ||         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 14, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 2972852166 (ok)
-	size = 2 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 3 (ok)
-	errCode = 0 (ok)
-	ListCanL = 009115D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 0091162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||    POISON ||  0.000000 |
-		Next  :  |         2 ||         0 ||         1 ||         0 ||         0 |
-		Prev  :  |         1 ||         2 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 16, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 1820267422 (ok)
-	size = 3 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 0 (ok)
-	errCode = 0 (ok)
-	ListCanL = 009115D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 0091162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||  1.000000 ||  0.000000 |
-		Next  :  |         3 ||         0 ||         1 ||         2 ||         0 |
-		Prev  :  |         1 ||         2 ||         3 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 18, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 2972852166 (ok)
-	size = 2 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 3 (ok)
-	errCode = 0 (ok)
-	ListCanL = 009115D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 0091162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||    POISON ||  0.000000 |
-		Next  :  |         2 ||         0 ||         1 ||         0 ||         0 |
-		Prev  :  |         1 ||         2 ||         0 ||         0 ||         0 |
-End of dump
-----------------------------------------
-Logging session at compiled time : 13:53:35 Oct 28 2022
-
-In file list\list.cpp, function main, line 10, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 2178417864 (ok)
-	size = 0 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 1 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00D115D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00D1162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||    POISON ||    POISON ||    POISON ||    POISON |
-		Next  :  |         0 ||        -2 ||        -3 ||         0 ||        -5 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 12, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 4076887133 (ok)
-	size = 1 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 2 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00D115D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00D1162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||    POISON ||    POISON ||    POISON |
-		Next  :  |         1 ||         0 ||        -3 ||         0 ||        -5 |
-		Prev  :  |         1 ||         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 14, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 2390676709 (ok)
-	size = 2 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 3 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00D115D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00D1162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||    POISON ||    POISON |
-		Next  :  |         2 ||         0 ||         1 ||         0 ||        -5 |
-		Prev  :  |         1 ||         2 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 16, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 1238091965 (ok)
-	size = 3 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 0 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00D115D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00D1162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||  1.000000 ||    POISON |
-		Next  :  |         3 ||         0 ||         1 ||         2 ||        -5 |
-		Prev  :  |         1 ||         2 ||         3 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 18, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 2390676709 (ok)
-	size = 2 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 3 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00D115D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00D1162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||    POISON ||    POISON |
-		Next  :  |         2 ||         0 ||         1 ||         0 ||        -5 |
-		Prev  :  |         1 ||         2 ||         0 ||         0 ||         0 |
-End of dump
-----------------------------------------
-Logging session at compiled time : 13:55:21 Oct 28 2022
-
-In file list\list.cpp, function main, line 10, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 1671581061 (ok)
-	size = 0 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 1 (ok)
-	errCode = 0 (ok)
-	ListCanL = 008515D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 0085162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||    POISON ||    POISON ||    POISON ||    POISON |
-		Next  :  |         0 ||        -2 ||        -3 ||        -4 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 12, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 3570050330 (ok)
-	size = 1 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 2 (ok)
-	errCode = 0 (ok)
-	ListCanL = 008515D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 0085162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||    POISON ||    POISON ||    POISON |
-		Next  :  |         1 ||         0 ||        -3 ||        -4 ||         0 |
-		Prev  :  |         1 ||         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 14, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 1883839906 (ok)
-	size = 2 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 3 (ok)
-	errCode = 0 (ok)
-	ListCanL = 008515D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 0085162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||    POISON ||    POISON |
-		Next  :  |         2 ||         0 ||         1 ||        -4 ||         0 |
-		Prev  :  |         1 ||         2 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 16, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 1727748509 (ok)
-	size = 3 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 4 (ok)
-	errCode = 0 (ok)
-	ListCanL = 008515D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 0085162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||  1.000000 ||    POISON |
-		Next  :  |         3 ||         0 ||         1 ||         2 ||         0 |
-		Prev  :  |         1 ||         2 ||         3 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 18, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 1883839906 (ok)
-	size = 2 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 3 (ok)
-	errCode = 0 (ok)
-	ListCanL = 008515D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 0085162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||    POISON ||    POISON |
+		Values : | NULL_ELEM ||  1.000000 ||  1.000000 ||    POISON ||    POISON |
 		Next  :  |         2 ||         0 ||         1 ||        -4 ||         0 |
 		Prev  :  |         1 ||         2 ||         0 ||         0 ||         0 |
 End of dump
 ----------------------------------------
-Logging session at compiled time : 13:55:21 Oct 28 2022
+Logging session at compiled time : 14:45:04 Oct 28 2022
 
-In file list\list.cpp, function main, line 10, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 970095538 (ok)
-	size = 0 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 1 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00CC15D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00CC162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||    POISON ||    POISON ||    POISON ||    POISON |
-		Next  :  |         0 ||        -2 ||        -3 ||        -4 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 12, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 2868564807 (ok)
-	size = 1 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 2 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00CC15D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00CC162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||    POISON ||    POISON ||    POISON |
-		Next  :  |         1 ||         0 ||        -3 ||        -4 ||         0 |
-		Prev  :  |         1 ||         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 14, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 383273935 (ok)
-	size = 2 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 3 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00CC15D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00CC162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||    POISON ||    POISON |
-		Next  :  |         1 ||         2 ||         0 ||        -4 ||         0 |
-		Prev  :  |         2 ||         0 ||         1 ||         0 ||         0 |
-End of dump
 In file list\list.cpp, function main, line 16, list named lol was dumped :
 	Errors :
 		[ok]
 	canL = 3735928559 (ok)
-	hash = 4213671882 (ok)
+	hash = 3765750256 (ok)
+	size = 6 (ok)
+	capacity = 8 (ok)
+	firstEmpty = 4160690781 (ok)
+	errCode = 0 (ok)
+	ListCanL = 00BB2430	*ListCanL = 0 (BAD_CAN)
+	ListCanR = 00BB24C4	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : | NULL_ELEM ||  1.000000 ||  1.000000 ||  1.000000 ||  1.000000 ||    POISON ||    POISON ||    POISON ||    POISON |
+		Next  :  |        -1 ||         2 ||         3 ||         4 ||         0 ||        -6 ||        -7 ||         0 ||        -9 |
+		Prev  :  |        -1 ||         0 ||         1 ||         2 ||         3 ||         0 ||         0 ||         0 ||         0 |
+End of dump
+----------------------------------------
+Logging session at compiled time : 14:45:04 Oct 28 2022
+
+In file list\list.cpp, function main, line 13, list named lol was dumped :
+	Errors :
+		[ok]
+	canL = 3735928559 (ok)
+	hash = 3747220565 (ok)
 	size = 3 (ok)
 	capacity = 4 (ok)
 	firstEmpty = 4 (ok)
 	errCode = 0 (ok)
-	ListCanL = 00CC15D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00CC162C	*ListCanR = 3545084735 (ok)
+	ListCanL = 00CA15D8	*ListCanL = 3735928559 (ok)
+	ListCanR = 00CA162C	*ListCanR = 3545084735 (ok)
 	canR = 3545084735 (ok)
 	lol.List :
-		Values : |    POISON ||  1.000000 ||  1.000000 ||  1.000000 ||    POISON |
-		Next  :  |         1 ||         2 ||         3 ||         0 ||         0 |
-		Prev  :  |         3 ||         0 ||         1 ||         2 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 18, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 125675409 (ok)
-	size = 2 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 1 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00CC15D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00CC162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||    POISON ||  1.000000 ||  1.000000 ||    POISON |
-		Next  :  |         2 ||        -4 ||         3 ||         0 ||         0 |
-		Prev  :  |         3 ||         0 ||         0 ||         2 ||         0 |
+		Values : | NULL_ELEM ||  1.000000 ||  1.000000 ||  1.000000 ||    POISON |
+		Next  :  |         3 ||         0 ||         1 ||         2 ||         0 |
+		Prev  :  |         1 ||         2 ||         3 ||         0 ||         0 |
 End of dump
 ----------------------------------------
-Logging session at compiled time : 13:55:21 Oct 28 2022
+Logging session at compiled time : 14:45:04 Oct 28 2022
 
-In file list\list.cpp, function main, line 10, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 2291050397 (ok)
-	size = 0 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 1 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00CD15D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00CD162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||    POISON ||    POISON ||    POISON ||    POISON |
-		Next  :  |         0 ||        -2 ||        -3 ||        -4 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 12, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 4189519666 (ok)
-	size = 1 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 2 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00CD15D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00CD162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||    POISON ||    POISON ||    POISON |
-		Next  :  |         1 ||         0 ||        -3 ||        -4 ||         0 |
-		Prev  :  |         1 ||         0 ||         0 ||         0 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 14, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 1000562615 (ok)
-	size = 2 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 3 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00CD15D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00CD162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||  1.000000 ||  2.000000 ||    POISON ||    POISON |
-		Next  :  |         1 ||         2 ||         0 ||        -4 ||         0 |
-		Prev  :  |         2 ||         0 ||         1 ||         0 ||         0 |
-End of dump
 In file list\list.cpp, function main, line 16, list named lol was dumped :
 	Errors :
 		[ok]
 	canL = 3735928559 (ok)
-	hash = 1509904823 (ok)
-	size = 3 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 4 (ok)
+	hash = 484629059 (ok)
+	size = 5 (ok)
+	capacity = 8 (ok)
+	firstEmpty = 4294967295 (ok)
 	errCode = 0 (ok)
-	ListCanL = 00CD15D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00CD162C	*ListCanR = 3545084735 (ok)
+	ListCanL = 00C62430	*ListCanL = 3735928559 (ok)
+	ListCanR = 00C624C4	*ListCanR = 3545084735 (ok)
 	canR = 3545084735 (ok)
 	lol.List :
-		Values : |    POISON ||  1.000000 ||  2.000000 ||  3.000000 ||    POISON |
-		Next  :  |         1 ||         2 ||         3 ||         0 ||         0 |
-		Prev  :  |         3 ||         0 ||         1 ||         2 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 18, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 1716875646 (ok)
-	size = 2 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 1 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00CD15D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00CD162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : |    POISON ||    POISON ||  2.000000 ||  3.000000 ||    POISON |
-		Next  :  |         2 ||        -4 ||         3 ||         0 ||         0 |
-		Prev  :  |         3 ||         0 ||         0 ||         2 ||         0 |
+		Values : | NULL_ELEM ||  1.000000 ||  1.000000 ||  1.000000 ||  1.000000 ||    POISON ||    POISON ||    POISON ||    POISON |
+		Next  :  |         0 ||         2 ||         3 ||         4 ||         0 ||        -6 ||        -7 ||         0 ||        -9 |
+		Prev  :  |         0 ||         0 ||         1 ||         2 ||         3 ||         0 ||         0 ||         0 ||         0 |
 End of dump
 ----------------------------------------
-Logging session at compiled time : 13:58:50 Oct 28 2022
+Logging session at compiled time : 14:50:27 Oct 28 2022
 
-In file list\list.cpp, function main, line 10, list named lol was dumped :
+In file list\list.cpp, function main, line 16, list named lol was dumped :
 	Errors :
 		[ok]
 	canL = 3735928559 (ok)
-	hash = 2291050397 (ok)
-	size = 0 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 1 (ok)
+	hash = 3436800455 (ok)
+	size = 5 (ok)
+	capacity = 8 (ok)
+	firstEmpty = 6 (ok)
 	errCode = 0 (ok)
-	ListCanL = 00CD15D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00CD162C	*ListCanR = 3545084735 (ok)
+	ListCanL = 00C52430	*ListCanL = 3735928559 (ok)
+	ListCanR = 00C524C4	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : | NULL_ELEM ||  1.000000 ||  1.000000 ||  1.000000 ||  1.000000 ||  1.000000 ||    POISON ||    POISON ||    POISON |
+		Next  :  |         5 ||         2 ||         3 ||         4 ||         0 ||         1 ||        -7 ||         0 ||        -9 |
+		Prev  :  |         1 ||         5 ||         1 ||         2 ||         3 ||         0 ||         0 ||         0 ||         0 |
+End of dump
+----------------------------------------
+Logging session at compiled time : 14:50:27 Oct 28 2022
+
+In file list\list.cpp, function main, line 16, list named lol was dumped :
+	Errors :
+		[ok]
+	canL = 3735928559 (ok)
+	hash = 259640046 (ok)
+	size = 5 (ok)
+	capacity = 8 (ok)
+	firstEmpty = 6 (ok)
+	errCode = 0 (ok)
+	ListCanL = 00CA2430	*ListCanL = 3735928559 (ok)
+	ListCanR = 00CA24C4	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : | NULL_ELEM ||  1.000000 ||  1.000000 ||  1.000000 ||  1.000000 ||  1.000000 ||    POISON ||    POISON ||    POISON |
+		Next  :  |         5 ||         2 ||         3 ||         4 ||         0 ||         1 ||        -7 ||         0 ||        -9 |
+		Prev  :  |         1 ||         5 ||         1 ||         2 ||         3 ||         0 ||         0 ||         0 ||         0 |
+End of dump
+----------------------------------------
+Logging session at compiled time : 22:12:11 Oct 28 2022
+
+In file list\list.cpp, function main, line 15, list named lol was dumped :
+	Errors :
+		[ok]
+	canL = 3735928559 (ok)
+	hash = 4031403909 (ok)
+	size = 5 (ok)
+	capacity = 8 (ok)
+	firstEmpty = 6 (ok)
+	errCode = 0 (ok)
+	ListCanL = 00C92438	*ListCanL = 3735928559 (ok)
+	ListCanR = 00C924CC	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : | NULL_ELEM ||    POISON ||    POISON ||    POISON ||    POISON ||    POISON ||    POISON ||    POISON ||    POISON |
+		Next  :  |         1 ||         5 ||         3 ||         4 ||         0 ||         2 ||        -7 ||         0 ||        -9 |
+		Prev  :  |         0 ||         0 ||         5 ||         2 ||         3 ||         1 ||         0 ||         0 ||         0 |
+End of dump
+----------------------------------------
+Logging session at compiled time : 22:12:11 Oct 28 2022
+
+In file list\list.cpp, function main, line 11, list named lol was dumped :
+	Errors :
+		[ok]
+	canL = 3735928559 (ok)
+	hash = 1027740968 (ok)
+	size = 1 (ok)
+	capacity = 4 (ok)
+	firstEmpty = 2 (ok)
+	errCode = 0 (ok)
+	ListCanL = 00BB15D8	*ListCanL = 3735928559 (ok)
+	ListCanR = 00BB162C	*ListCanR = 3545084735 (ok)
 	canR = 3545084735 (ok)
 	lol.List :
 		Values : | NULL_ELEM ||    POISON ||    POISON ||    POISON ||    POISON |
-		Next  :  |         0 ||        -2 ||        -3 ||        -4 ||         0 |
-		Prev  :  |         0 ||         0 ||         0 ||         0 ||         0 |
+		Next  :  |         0 ||         1 ||        -3 ||        -4 ||         0 |
+		Prev  :  |         0 ||         1 ||         0 ||         0 ||         0 |
 End of dump
-In file list\list.cpp, function main, line 12, list named lol was dumped :
+----------------------------------------
+Logging session at compiled time : 22:13:43 Oct 28 2022
+
+In file list\list.cpp, function main, line 11, list named lol was dumped :
 	Errors :
 		[ok]
 	canL = 3735928559 (ok)
-	hash = 4189519666 (ok)
+	hash = 3591527998 (ok)
 	size = 1 (ok)
 	capacity = 4 (ok)
 	firstEmpty = 2 (ok)
 	errCode = 0 (ok)
-	ListCanL = 00CD15D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00CD162C	*ListCanR = 3545084735 (ok)
+	ListCanL = 00BA15D8	*ListCanL = 3735928559 (ok)
+	ListCanR = 00BA162C	*ListCanR = 3545084735 (ok)
+	canR = 3545084735 (ok)
+	lol.List :
+		Values : | NULL_ELEM ||  0.000000 ||    POISON ||    POISON ||    POISON |
+		Next  :  |         0 ||         1 ||        -3 ||        -4 ||         0 |
+		Prev  :  |         0 ||         1 ||         0 ||         0 ||         0 |
+End of dump
+----------------------------------------
+Logging session at compiled time : 22:13:43 Oct 28 2022
+
+In file list\list.cpp, function main, line 11, list named lol was dumped :
+	Errors :
+		[ok]
+	canL = 3735928559 (ok)
+	hash = 2543918105 (ok)
+	size = 1 (ok)
+	capacity = 4 (ok)
+	firstEmpty = 2 (ok)
+	errCode = 0 (ok)
+	ListCanL = 00C215D8	*ListCanL = 3735928559 (ok)
+	ListCanR = 00C2162C	*ListCanR = 3545084735 (ok)
 	canR = 3545084735 (ok)
 	lol.List :
 		Values : | NULL_ELEM ||  1.000000 ||    POISON ||    POISON ||    POISON |
 		Next  :  |         1 ||         0 ||        -3 ||        -4 ||         0 |
 		Prev  :  |         1 ||         0 ||         0 ||         0 ||         0 |
 End of dump
-In file list\list.cpp, function main, line 14, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 1000562615 (ok)
-	size = 2 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 3 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00CD15D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00CD162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : | NULL_ELEM ||  1.000000 ||  2.000000 ||    POISON ||    POISON |
-		Next  :  |         1 ||         2 ||         0 ||        -4 ||         0 |
-		Prev  :  |         2 ||         0 ||         1 ||         0 ||         0 |
-End of dump
+----------------------------------------
+Logging session at compiled time : 22:13:43 Oct 28 2022
+
 In file list\list.cpp, function main, line 16, list named lol was dumped :
 	Errors :
 		[ok]
 	canL = 3735928559 (ok)
-	hash = 1509904823 (ok)
-	size = 3 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 4 (ok)
+	hash = 2362646894 (ok)
+	size = 6 (ok)
+	capacity = 8 (ok)
+	firstEmpty = 7 (ok)
 	errCode = 0 (ok)
-	ListCanL = 00CD15D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00CD162C	*ListCanR = 3545084735 (ok)
+	ListCanL = 00B92438	*ListCanL = 3735928559 (ok)
+	ListCanR = 00B924CC	*ListCanR = 3545084735 (ok)
 	canR = 3545084735 (ok)
 	lol.List :
-		Values : | NULL_ELEM ||  1.000000 ||  2.000000 ||  3.000000 ||    POISON |
-		Next  :  |         1 ||         2 ||         3 ||         0 ||         0 |
-		Prev  :  |         3 ||         0 ||         1 ||         2 ||         0 |
-End of dump
-In file list\list.cpp, function main, line 18, list named lol was dumped :
-	Errors :
-		[ok]
-	canL = 3735928559 (ok)
-	hash = 1716875646 (ok)
-	size = 2 (ok)
-	capacity = 4 (ok)
-	firstEmpty = 1 (ok)
-	errCode = 0 (ok)
-	ListCanL = 00CD15D8	*ListCanL = 3735928559 (ok)
-	ListCanR = 00CD162C	*ListCanR = 3545084735 (ok)
-	canR = 3545084735 (ok)
-	lol.List :
-		Values : | NULL_ELEM ||    POISON ||  2.000000 ||  3.000000 ||    POISON |
-		Next  :  |         2 ||        -4 ||         3 ||         0 ||         0 |
-		Prev  :  |         3 ||         0 ||         0 ||         2 ||         0 |
+		Values : | NULL_ELEM ||  1.000000 ||  1.000000 ||  1.000000 ||  1.000000 ||  1.000000 ||  1.000000 ||    POISON ||    POISON |
+		Next  :  |         6 ||         2 ||         3 ||         4 ||         0 ||         1 ||         5 ||         0 ||        -9 |
+		Prev  :  |         1 ||         5 ||         1 ||         2 ||         3 ||         6 ||         0 ||         0 ||         0 |
 End of dump

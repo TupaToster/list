@@ -7,11 +7,11 @@ int main (int argc, char* argv[]) {
     
     ListCtor (&lol);
 
-    ListPush (&lol, 1, 0);
-    ListPush (&lol, 1, 0);
-    ListPush (&lol, 1, 0);
-    ListPush (&lol, 1, 0);
-    ListPush (&lol, 1, 0);
-    ListPush (&lol, 1, 0);
+    ListInsert (&lol, 1, 0);
+    ListInsert (&lol, 2, 0);
+    ListInsert (&lol, 2, 0);
+    ListInsert (&lol, 2, 0);
+    ListResize (&lol);
     ListDump (lol);
+    ListGraphDump (&lol, "becocs", 228);
 }

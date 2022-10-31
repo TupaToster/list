@@ -47,7 +47,7 @@ bool isPoisonInside (void* var, size_t sizeofVar) {
     }
 }
 
-void NodCtor (Nod* nod) {
+void NodCtorDtor (Nod* nod) {
 
     setPoison (nod->value);
     nod->next = NULL;
@@ -61,7 +61,7 @@ Nod* NodAddAfter (Nod* nod, elem_t value) {
     Nod* newNod = (Nod*) calloc (1, sizeof (Nod));
     assert (newNod != NULL);
 
-    NodCtor (newNod);
+    NodCtorDtor (newNod);
 
     newNod->value = value;
     newNod->prev = nod;
@@ -79,8 +79,10 @@ elem_t NodPop (Nod* nod) {
     nod->next->prev = nod->prev;
 
     elem_t retVal = nod->value;
-    NodCtor (nod);
+    NodCtorDtor (nod);
     free (nod);
 
     return retVal;
 }
+
+

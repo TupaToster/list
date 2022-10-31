@@ -26,8 +26,6 @@ typedef double elem_t;
 
 #define isPoison(var) isPoisonInside (&var, sizeof (var)) ///< Macros for checking for poison
 
-#define userAgreement "I (user) aggree that i fully understand effect that call of this function will take on program's efficiency and still wish to proceed. Therefore I confirm, that no claims about code inefficiency will be made by me."
-
 #ifndef NDEBUG
 #define ListDump(list) ListDumpInside (&list, #list, __FILE__, __FUNCTION__, __LINE__) ///< List dump macros
 #else
@@ -131,13 +129,13 @@ void ListLogErrors (List* list);
 /// @param val Value to push
 /// @param pos Position to push to
 /// @return Index in List->List of a pushed element
-int ListPush (List* list, elem_t val, int pos);
+int ListInsert (List* list, elem_t val, int pos);
 
 /// @brief Pops and element on position pos
 /// @param list List to pop from
 /// @param pos Position to pop
 /// @return Popped element
-elem_t ListPop (List* list, int pos);
+elem_t ListRemoveAndReturn (List* list, int pos);
 
 /// @brief Resizes List if it's time to do it
 /// @param list List to resize
@@ -151,3 +149,6 @@ void ListResize (List* list);
 /// @param confirmationOfResponsibility Look up userAgreement
 /// @return index of an element or -1 if u failed as a human
 int GetRealIndex (List* list, int LogicalNumber, int step, bool DoUReallyWantIt, char* confirmationOfResponsibility);
+
+
+void ListGraphDump (List* list, const char why[], int line);

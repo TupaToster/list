@@ -320,7 +320,7 @@ void ListLogErrors (List* list) {
         for (int i = 0; i < iter; i++) flogprintf ("%s", names[i])
 }
 
-int ListPush (List* list, elem_t val, int prev) {
+int ListInsert (List* list, elem_t val, int prev) {
 
     assert (list != NULL);
     assert (prev >= 0);
@@ -345,7 +345,7 @@ int ListPush (List* list, elem_t val, int prev) {
     return currElem;
 }
 
-elem_t ListPop (List* list, int pos) {
+elem_t ListRemoveAndReturn (List* list, int pos) {
 
     assert (list != NULL);
     assert (pos > 0);
@@ -393,6 +393,8 @@ void ListResize (List* list) {
     list->ListCanR = (unsigned int*)(temp + list->capacity + 1);
 
     temp[0] = list->List[0];
+    temp[0].prev = list->size;
+    temp[list->size].next = 0;
     for (int i = 1; i <= list->size; i++) {
 
         temp[i] = list->List[temp[i-1].next];
@@ -421,7 +423,7 @@ int GetRealIndex (List* list, int LogicalNumber, bool DoUReallyWantIt, char* con
     assert (list != NULL);
 
     if (!DoUReallyWantIt) return -1;
-    if (strcmp (confirmationOfResponsibility, userAgreement)) return -1;
+    if (strcmp (confirmationOfResponsibility, "I (user) aggree that i fully understand effect that call of this function will take on program's efficiency and still wish to proceed. Therefore I confirm, that no claims about code inefficiency will be made by me.")) return -1;
 
     int index = list->List[0].next;
 
@@ -433,4 +435,98 @@ int GetRealIndex (List* list, int LogicalNumber, bool DoUReallyWantIt, char* con
     }
 
     return index;
+}
+
+void ListGraphDump (List* list, const char why[], int line) {
+
+    assert (list != NULL);
+    assert (why != NULL);
+
+    static int GraphDumpCounter = 0;
+    const char HtmLogFile[] = "logs_out.htm";
+
+    GraphDumpCounter++;
+
+    char srcName[] = "GraphDumpSrc.dot";
+    char picName[30] = "GraphDumpPic";
+    sprintf (picName, "%d.png", GraphDumpCounter);
+
+    FILE* picSource = fopen (srcName, "w");
+    assert (picSource != NULL);
+
+    #define picprintf(...) fprintf (picSource, __VA_ARGS__)
+
+    picprintf ("digraph List_%d {" "\n", GraphDumpCounter);
+    picprintf ("\t" "rankdir = TB" "\n");
+
+    picprintf ("\t" "\"Nod_0\" [shape = \"record\","
+                                "style = \"filled\","
+                                "fillcolor = \"yellow\","
+                                "label = \" Index = NULL_ELEMENT |"
+                                "{ <prev> Tail = %d | Value = POISON | <next> Head = %d }\"]\n", list->List[0].prev, list->List[0].next);
+
+    for (int i = 1; i <= list->capacity; i++) {
+
+
+        picprintf ("\t" "\"Nod_%d\" [shape = \"record\","
+                                "style = \"filled\",", i);
+
+        if (list->List[i].next <= 0 and isPoison (list->List[i].value)) {
+
+            picprintf ("fillcolor = \"red\","
+                       "label = \" Index = %d (FREE_ELEM) |"
+                       "{ <prev> Prev = %d | Value = POISON | <next> Next = %d}\"]\n", i, list->List[i].prev, list->List[i].next);
+        }
+        else {
+
+            picprintf ("fillcolor = \"green\","
+                       "label = \" Index = %d |"
+                       "{ <prev> Prev = %d | Value = " elem_t_F " | <next> Next = %d} \"]\n", i, list->List[i].prev, list->List[i].value, list->List[i].next);
+        }
+    }
+
+    picprintf ("\t" "\"firstEmpty\" [shape = \"record\", style = \"filled\", color = \"red\", label = \"firstEmpty = %d\"]\n");
+
+    picprintf ("\t" "{rank = same; ");
+    for (int i = 0; i <= list->capacity; i++) {
+
+        picprintf ("Nod_%d; ", i);
+    }
+    picprintf ("}\n");
+
+    for (int i = 0; i < list->capacity; i++) {
+
+        picprintf ("\t" "\"Nod_%d\" -> \"Nod_%d\"[style = \"invis\"];\n", i, i + 1);
+    }
+
+    for (int i = 0; i <= list->capacity; i++) {
+
+        if (abs (list->List[i].next) >= 0 and abs (list->List[i].next) <= list->capacity) {
+
+            picprintf ("\t" "\"Nod_%d\":next -> \"Nod_%d\":next[color = \"blue\"];\n", i, abs (list->List[i].next));
+        }
+        if (!(list->List[i].next <= 0 and isPoison (list->List[i].value)) and list->List[i].prev >= 0 and list->List[i].prev <= list->capacity) {
+
+            picprintf ("\t" "\"Nod_%d\":prev -> \"Nod_%d\":prev[color = \"red\"];\n", i, list->List[i].prev);
+        }
+    }
+
+    picprintf ("\t" "\"firstEmpty\" -> \"Nod_%d\";\n}", list->firstEmpty);
+
+    #undef picprintf
+
+    fclose (picSource);
+
+    char command[100] = "";
+    sprintf (command, "dot -Tpng %s -o %s", srcName, picName);
+
+    system (command);
+
+    FILE* htm = fopen (HtmLogFile, "a");
+
+    fprintf(htm, "<pre>\n");
+    fprintf(htm, "<h2>ListDump on reason %s</h2>\n", why);
+    fprintf(htm, "<img src = \"%s\">\n", picName);
+    fprintf(htm, "<hr>\n");
+    fclose(htm);
 }

@@ -25,14 +25,6 @@ typedef double elem_t;
 
 #define isPoison(var) isPoisonInside (&var, sizeof (var)) ///< Macros for checking for poison
 
-#define userAgreement "I (user) aggree that i fully understand effect that call of this function will take on program's efficiency and still wish to proceed. Therefore I confirm, that no claims about code inefficiency will be made by me."
-
-#ifndef NDEBUG
-#define ListDump(list) ListDumpInside (&list, #list, __FILE__, __FUNCTION__, __LINE__) ///< List dump macros
-#else
-#define ListDump(list) ;
-#endif
-
 //End of system defines
 
 struct Nod {
@@ -42,11 +34,19 @@ struct Nod {
     Nod* prev    = NULL;
 };
 
-void NodCtor (Nod* nod);
+struct List {
 
-Nod* NodAddAfter (Nod* nod, elem_t value);
+    size_t size   = 0;
+    Nod* NullNod  = NULL;
+};
 
-elem_t NodPop (Nod* nod);
+void ListCtor (List* list);
+
+void NodCtorDtor (Nod* nod);
+
+Nod* ListAddAfterNod (List* list, Nod* nod, elem_t val);
+
+elem_t ListRemoveNod (List* list, Nod* nod);
 
 /// @brief Sets a variable to a Poison value
 /// @param var Var to set
@@ -59,3 +59,5 @@ void setPoisonInside (void* var, size_t sizeofVar);
 /// @return true - if is poisoned
 /// @return false - if not
 bool isPoisonInside (void* var, size_t sizeofVar);
+
+void ListDump (List* list);

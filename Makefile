@@ -4,7 +4,7 @@ CFLAGS+=-Wshadow -Winit-self -Wredundant-decls -Wcast-align -Wundef -Wfloat-equa
 
 LIST_OBJ+=list\list.o list\list_funcs.o lib\flog.o
 
-DLIST_OBJ+=dumb_log\dumb_list_funcs.o dumb_log\main.cpp
+DLIST_OBJ+=dumb_log\dumb_list_funcs.o dumb_log\main.o lib\flog.o
 
 all: list.exe dlist.exe
 

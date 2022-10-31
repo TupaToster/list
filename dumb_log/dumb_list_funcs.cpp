@@ -54,35 +54,96 @@ void NodCtorDtor (Nod* nod) {
     nod->prev = NULL;
 }
 
-Nod* NodAddAfter (Nod* nod, elem_t value) {
-
-    assert (nod != NULL);
+Nod* ListAddAfterNod (List* list, Nod* nod, elem_t val) {
 
     Nod* newNod = (Nod*) calloc (1, sizeof (Nod));
-    assert (newNod != NULL);
-
     NodCtorDtor (newNod);
+    list->size++;
 
-    newNod->value = value;
-    newNod->prev = nod;
-    newNod->next = nod->next;
+    newNod->next    = nod->next;
+    newNod->prev    = nod;
+    nod->next->prev = newNod;
+    nod->next       = newNod;
+    newNod->value   = val;
 
-    nod->next = newNod->next;
-    newNod->next->prev = newNod;
+    return newNod;
 }
 
-elem_t NodPop (Nod* nod) {
+elem_t ListRemoveNod (List* list, Nod* nod) {
 
-    assert (nod != NULL);
-
+    list->size--;
+    elem_t retVal = nod->value;
     nod->prev->next = nod->next;
     nod->next->prev = nod->prev;
-
-    elem_t retVal = nod->value;
     NodCtorDtor (nod);
     free (nod);
-
-    return retVal;
 }
 
+void ListCtor (List* list) {
 
+    list->size = 0;
+    list->NullNod = (Nod*) calloc (1, sizeof (Nod));
+    NodCtorDtor (list->NullNod);
+    list->NullNod->next = list->NullNod;
+    list->NullNod->prev = list->NullNod;
+}
+
+void ListDump (List* list) {
+
+    flogprintf ("List was dumped somewhere somehow named in an unknown way on a secret line:" "\n");
+
+    flogprintf ("\t" "List :");
+
+    Nod* iter = list->NullNod->next;
+
+    flogprintf ("\n" "\t\t" "Adress : ");
+
+    flogprintf ("| %9p |", list->NullNod);
+
+    iter = list->NullNod->next;
+
+    while (iter != list->NullNod and iter != NULL) {
+
+        flogprintf ("| %9p |", iter);
+        iter = iter->next;
+    }
+
+    flogprintf ("\n" "\t\t" "Value  : ");
+
+    iter = list->NullNod->next;
+
+    flogprintf ("| NULL_ELEM |");
+
+    while (iter != list->NullNod and iter != NULL) {
+
+        if (isPoison (iter->value)) flogprintf ("|    POISON |")
+        else flogprintf ("| " elem_t_F " |", iter->value)
+        iter = iter->next;
+    }
+
+    flogprintf ("\n" "\t\t" "Next   : ");
+
+    flogprintf ("| %9p |", list->NullNod->next);
+    iter = list->NullNod->next;
+
+    while (iter != list->NullNod and iter != NULL) {
+
+        flogprintf ("| %9p |", iter->next);
+        iter = iter->next;
+    }
+
+    flogprintf ("\n" "\t\t" "Prev   : ");
+
+    flogprintf ("| %9p |", list->NullNod->prev);
+
+    iter = list->NullNod->next;
+
+    while (iter != list->NullNod and iter != NULL) {
+
+        flogprintf ("| %9p |", iter->prev);
+        iter = iter->next;
+    }
+
+    flogprintf ("\n" "End of dump" "\n");
+
+}

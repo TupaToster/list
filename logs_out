@@ -995,3 +995,209 @@ In file list\list.cpp, function main, line 14, list named lol was dumped :
 		Next  :  |         1 ||         2 ||         3 ||         4 ||         0 ||        -6 ||        -7 ||        -8 ||         0 |
 		Prev  :  |         4 ||         0 ||         1 ||         2 ||         3 ||         0 ||         0 ||         0 ||         0 |
 End of dump
+----------------------------------------
+Logging session at compiled time : 00:38:01 Nov  1 2022
+
+In file dumb_log\main.cpp, function main, line 5 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+----------------------------------------
+Logging session at compiled time : 00:38:13 Nov  1 2022
+
+In file dumb_log\main.cpp, function main, line 6 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+----------------------------------------
+Logging session at compiled time : 00:38:38 Nov  1 2022
+
+In file dumb_log\dumb_list_funcs.cpp, function ListCtor, line 94 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+----------------------------------------
+Logging session at compiled time : 00:38:38 Nov  1 2022
+
+In file dumb_log\dumb_list_funcs.cpp, function ListCtor, line 94 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+----------------------------------------
+Logging session at compiled time : 00:39:48 Nov  1 2022
+
+In file dumb_log\main.cpp, function main, line 7 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+List was dumped somewhere somehow named in an unknown way on a secret line:
+	List :
+		Adress: |  00C515E0 ||  00000000 |----------------------------------------
+Logging session at compiled time : 00:40:26 Nov  1 2022
+
+In file dumb_log\main.cpp, function main, line 7 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+List was dumped somewhere somehow named in an unknown way on a secret line:
+	List :
+		Adress: |  00C315E0 ||  00000000 |----------------------------------------
+Logging session at compiled time : 00:40:26 Nov  1 2022
+
+In file dumb_log\main.cpp, function main, line 7 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+List was dumped somewhere somehow named in an unknown way on a secret line:
+	List :
+		Adress: |  00C915E0 |
+		Value : | NULL_ELEM |
+		Next   : |  00000000 |
+		Prev   : |  00000000 |
+End of dump
+List was dumped somewhere somehow named in an unknown way on a secret line:
+	List :
+		Adress: |  00C915E0 |
+		Value : | NULL_ELEM |
+		Next   : |  00000000 |
+		Prev   : |  00000000 |
+End of dump
+----------------------------------------
+Logging session at compiled time : 00:42:10 Nov  1 2022
+
+In file dumb_log\main.cpp, function main, line 7 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+List was dumped somewhere somehow named in an unknown way on a secret line:
+	List :
+		Adress: |  00C215E0 |
+		Value : | NULL_ELEM |
+		Next   : |  00000000 |
+		Prev   : |  00000000 |
+End of dump
+In file dumb_log\main.cpp, function main, line 9 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+In file dumb_log\main.cpp, function main, line 15 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+List was dumped somewhere somehow named in an unknown way on a secret line:
+	List :
+		Adress: |  00C215E0 |
+		Value : | NULL_ELEM |
+		Next   : |  00000000 |
+		Prev   : |  00000000 |
+End of dump
+----------------------------------------
+Logging session at compiled time : 00:42:10 Nov  1 2022
+
+In file dumb_log\main.cpp, function main, line 7 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+List was dumped somewhere somehow named in an unknown way on a secret line:
+	List :
+		Adress: |  00D315E0 |
+		Value : | NULL_ELEM |
+		Next   : |  00D315E0 |
+		Prev   : |  00D315E0 |
+End of dump
+In file dumb_log\main.cpp, function main, line 9 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+In file dumb_log\main.cpp, function main, line 15 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+List was dumped somewhere somehow named in an unknown way on a secret line:
+	List :
+		Adress: |  00D315E0 ||  00D323C8 ||  00D323B0 ||  00D31668 ||  00D31650 ||  00D31638 |
+		Value : | NULL_ELEM |
+		Next   : |  00D323C8 ||  00D323B0 ||  00D31668 ||  00D31650 ||  00D31638 ||  00D315E0 |
+		Prev   : |  00D31638 ||  00D315E0 ||  00D323C8 ||  00D323B0 ||  00D31668 ||  00D31650 |
+End of dump
+----------------------------------------
+Logging session at compiled time : 00:42:10 Nov  1 2022
+
+In file dumb_log\main.cpp, function main, line 7 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+List was dumped somewhere somehow named in an unknown way on a secret line:
+	List :
+		Adress : |  00C015E0 |
+		Value  : | NULL_ELEM |
+		Next   : |  00C015E0 |
+		Prev   : |  00C015E0 |
+End of dump
+In file dumb_log\main.cpp, function main, line 9 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+In file dumb_log\main.cpp, function main, line 15 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+List was dumped somewhere somehow named in an unknown way on a secret line:
+	List :
+		Adress : |  00C015E0 ||  00C023C8 ||  00C023B0 ||  00C01668 ||  00C01650 ||  00C01638 |
+		Value  : | NULL_ELEM |
+		Next   : |  00C023C8 ||  00C023B0 ||  00C01668 ||  00C01650 ||  00C01638 ||  00C015E0 |
+		Prev   : |  00C01638 ||  00C015E0 ||  00C023C8 ||  00C023B0 ||  00C01668 ||  00C01650 |
+End of dump
+----------------------------------------
+Logging session at compiled time : 00:42:10 Nov  1 2022
+
+In file dumb_log\main.cpp, function main, line 7 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+List was dumped somewhere somehow named in an unknown way on a secret line:
+	List :
+		Adress : |  00C815E0 |
+		Value  : | NULL_ELEM |
+		Next   : |  00C815E0 |
+		Prev   : |  00C815E0 |
+End of dump
+In file dumb_log\main.cpp, function main, line 9 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+In file dumb_log\main.cpp, function main, line 15 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+List was dumped somewhere somehow named in an unknown way on a secret line:
+	List :
+		Adress : |  00C815E0 ||  00C823C8 ||  00C823B0 ||  00C81668 ||  00C81650 ||  00C81638 |
+		Value  : | NULL_ELEM |
+		Next   : |  00C823C8 ||  00C823B0 ||  00C81668 ||  00C81650 ||  00C81638 ||  00C815E0 |
+		Prev   : |  00C81638 ||  00C815E0 ||  00C823C8 ||  00C823B0 ||  00C81668 ||  00C81650 |
+End of dump
+----------------------------------------
+Logging session at compiled time : 00:42:10 Nov  1 2022
+
+In file dumb_log\main.cpp, function main, line 7 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+List was dumped somewhere somehow named in an unknown way on a secret line:
+	List :
+		Adress : |  00BD15E0 |
+		Value  : | NULL_ELEM |
+		Next   : |  00BD15E0 |
+		Prev   : |  00BD15E0 |
+End of dump
+In file dumb_log\main.cpp, function main, line 9 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+In file dumb_log\main.cpp, function main, line 15 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+List was dumped somewhere somehow named in an unknown way on a secret line:
+	List :
+		Adress : |  00BD15E0 ||  00BD23C8 ||  00BD23B0 ||  00BD1668 ||  00BD1650 ||  00BD1638 |
+		Value  : | NULL_ELEM |
+		Next   : |  00BD23C8 ||  00BD23B0 ||  00BD1668 ||  00BD1650 ||  00BD1638 ||  00BD15E0 |
+		Prev   : |  00BD1638 ||  00BD15E0 ||  00BD23C8 ||  00BD23B0 ||  00BD1668 ||  00BD1650 |
+End of dump
+----------------------------------------
+Logging session at compiled time : 00:42:10 Nov  1 2022
+
+In file dumb_log\main.cpp, function main, line 7 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+List was dumped somewhere somehow named in an unknown way on a secret line:
+	List :
+		Adress : |  00CB15E0 |
+		Value  : | NULL_ELEM |
+		Next   : |  00CB15E0 |
+		Prev   : |  00CB15E0 |
+End of dump
+In file dumb_log\main.cpp, function main, line 9 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+In file dumb_log\main.cpp, function main, line 15 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+List was dumped somewhere somehow named in an unknown way on a secret line:
+	List :
+		Adress : |  00CB15E0 ||  00CB23C8 ||  00CB23B0 ||  00CB1668 ||  00CB1650 ||  00CB1638 |
+		Value  : | NULL_ELEM |
+		Next   : |  00CB23C8 ||  00CB23B0 ||  00CB1668 ||  00CB1650 ||  00CB1638 ||  00CB15E0 |
+		Prev   : |  00CB1638 ||  00CB15E0 ||  00CB23C8 ||  00CB23B0 ||  00CB1668 ||  00CB1650 |
+End of dump
+----------------------------------------
+Logging session at compiled time : 00:42:10 Nov  1 2022
+
+In file dumb_log\main.cpp, function main, line 7 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+List was dumped somewhere somehow named in an unknown way on a secret line:
+	List :
+		Adress : |  00CC15E0 |
+		Value  : | NULL_ELEM |
+		Next   : |  00CC15E0 |
+		Prev   : |  00CC15E0 |
+End of dump
+In file dumb_log\main.cpp, function main, line 9 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+In file dumb_log\main.cpp, function main, line 15 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+List was dumped somewhere somehow named in an unknown way on a secret line:
+	List :
+		Adress : |  00CC15E0 ||  00CC23C8 ||  00CC23B0 ||  00CC1668 ||  00CC1650 ||  00CC1638 |
+		Value  : | NULL_ELEM |
+		Next   : |  00CC23C8 ||  00CC23B0 ||  00CC1668 ||  00CC1650 ||  00CC1638 ||  00CC15E0 |
+		Prev   : |  00CC1638 ||  00CC15E0 ||  00CC23C8 ||  00CC23B0 ||  00CC1668 ||  00CC1650 |
+End of dump
+----------------------------------------
+Logging session at compiled time : 00:42:10 Nov  1 2022
+
+In file dumb_log\main.cpp, function main, line 7 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+List was dumped somewhere somehow named in an unknown way on a secret line:
+	List :
+		Adress : |  00DD15E0 |
+		Value  : | NULL_ELEM |
+		Next   : |  00DD15E0 |
+		Prev   : |  00DD15E0 |
+End of dump
+In file dumb_log\main.cpp, function main, line 9 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+In file dumb_log\main.cpp, function main, line 15 : "lol" = 6C6F6C0 :: UNDEFINED_FORMAT : sizeof() = 4;
+List was dumped somewhere somehow named in an unknown way on a secret line:
+	List :
+		Adress : |  00DD15E0 ||  00DD23C8 ||  00DD23B0 ||  00DD1668 ||  00DD1650 ||  00DD1638 |
+		Value  : | NULL_ELEM ||  1.000000 ||  1.000000 ||  1.000000 ||  1.000000 ||  1.000000 |
+		Next   : |  00DD23C8 ||  00DD23B0 ||  00DD1668 ||  00DD1650 ||  00DD1638 ||  00DD15E0 |
+		Prev   : |  00DD1638 ||  00DD15E0 ||  00DD23C8 ||  00DD23B0 ||  00DD1668 ||  00DD1650 |
+End of dump

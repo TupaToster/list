@@ -67,6 +67,7 @@ struct List {
     size_t        capacity   = 0;     ///<Capacity of list (without zero element)
     int           firstEmpty = 0;     ///<First Empty element of list
     size_t        errCode    = OK;    ///<Error code
+    bool          linear     = true;  ///<Shows if list is an array by now
     unsigned int* ListCanL   = NULL;  ///<Left cannary of list
     Nod*          List       = NULL;  ///<List itself
     unsigned int* ListCanR   = NULL;  ///<Right cannary of list
@@ -152,3 +153,7 @@ int GetRealIndex (List* list, int LogicalNumber, int step, bool DoUReallyWantIt,
 
 
 void ListGraphDump (List* list, const char why[], int line);
+
+void ListLinearize (List* list);
+
+int ListCmpLin (const void* a, const void* b);

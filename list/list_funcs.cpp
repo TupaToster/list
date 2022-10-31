@@ -21,6 +21,7 @@ void ListCtor (List* list) {
     list->capacity   = 4;
     list->firstEmpty = 1;
     list->errCode    = OK;
+    list->linear     = true;
     list->List       = (Nod*) calloc ((list->capacity + 1) * sizeof (Nod) + 2 * sizeof (unsigned int), sizeof (char));
     assert (list->List != NULL);
     list->ListCanL   = (unsigned int*) list->List;
@@ -410,7 +411,7 @@ void ListResize (List* list) {
         temp[i].next = -(i+1);
     }
 
-    temp[list->capacity - 1].next = 0;
+    temp[list->capacity].next = 0;
     list->List = temp;
 
     free (previousPtr);
@@ -529,4 +530,60 @@ void ListGraphDump (List* list, const char why[], int line) {
     fprintf(htm, "<img src = \"%s\">\n", picName);
     fprintf(htm, "<hr>\n");
     fclose(htm);
+}
+
+void ListLinearize (List* list) {
+
+    assert (list != NULL);
+
+    ListVerifyHash (list);
+
+    int ind = 0;
+    for (int i = 1; i < list->size + 2; i++) {
+
+        int temp = list->List[ind].next;
+        list->List[ind].next = i;
+        ind = temp;
+    }
+
+    ind = list->firstEmpty;
+
+    while (ind != 0) {
+
+        int temp = -list->List[ind].next;
+        list->List[ind].next = list->size + 15;
+        ind = temp;
+    }
+
+    qsort (list->List, list->capacity + 1, sizeof (Nod), ListCmpLin);
+
+    for (int i = 1; i < list->size + 1; i++) {
+
+        list->List[i].prev = i - 1;
+    }
+
+    list->List[0].prev = list->size;
+    list->List[list->size].next = 0;
+
+    if (list->size == list->capacity) {
+
+        list->firstEmpty = 0;
+    }
+    else {
+        list->firstEmpty = list->size + 1;
+
+        for (int i = list->firstEmpty; i < list->capacity + 1; i++) {
+
+            list->List[i].next = -i - 1;
+        }
+
+        list->List[list->capacity].next = 0;
+    }
+
+    ListCountHash (list);
+}
+
+int ListCmpLin (const void* a, const void* b) {
+
+    return ( (const Nod*) a)->next - ( (const Nod*) b)->next;
 }

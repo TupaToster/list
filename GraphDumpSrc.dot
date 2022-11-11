@@ -1,36 +1,27 @@
-digraph List_1 {
+digraph List_2 {
+	graph [dpi = 100];
+	splines = ortho
 	rankdir = TB
-	"Nod_0" [shape = "record",style = "filled",fillcolor = "yellow",label = " Index = NULL_ELEMENT |{ <prev> Tail = 4 | Value = POISON | <next> Head = 1 }"]
-	"Nod_1" [shape = "record",style = "filled",fillcolor = "green",label = " Index = 1 |{ <prev> Prev = 0 | Value =  2.000000 | <next> Next = 2} "]
-	"Nod_2" [shape = "record",style = "filled",fillcolor = "green",label = " Index = 2 |{ <prev> Prev = 1 | Value =  2.000000 | <next> Next = 3} "]
-	"Nod_3" [shape = "record",style = "filled",fillcolor = "green",label = " Index = 3 |{ <prev> Prev = 2 | Value =  2.000000 | <next> Next = 4} "]
-	"Nod_4" [shape = "record",style = "filled",fillcolor = "green",label = " Index = 4 |{ <prev> Prev = 3 | Value =  1.000000 | <next> Next = 0} "]
-	"Nod_5" [shape = "record",style = "filled",fillcolor = "red",label = " Index = 5 (FREE_ELEM) |{ <prev> Prev = 0 | Value = POISON | <next> Next = -6}"]
-	"Nod_6" [shape = "record",style = "filled",fillcolor = "red",label = " Index = 6 (FREE_ELEM) |{ <prev> Prev = 0 | Value = POISON | <next> Next = -7}"]
-	"Nod_7" [shape = "record",style = "filled",fillcolor = "red",label = " Index = 7 (FREE_ELEM) |{ <prev> Prev = 0 | Value = POISON | <next> Next = 0}"]
-	"Nod_8" [shape = "record",style = "filled",fillcolor = "red",label = " Index = 8 (FREE_ELEM) |{ <prev> Prev = 0 | Value = POISON | <next> Next = -9}"]
-	"firstEmpty" [shape = "record", style = "filled", color = "red", label = "firstEmpty = 8"]
-	{rank = same; Nod_0; Nod_1; Nod_2; Nod_3; Nod_4; Nod_5; Nod_6; Nod_7; Nod_8; }
+	"Nod_0" [shape = "record",style = "filled",fillcolor = "yellow",label = " {Index = NULL_ELEMENT | {<prev> Tail = 4 | Value = POISON | <next> Head = 1}}"]
+	"Nod_1" [shape = "record",style = "filled",fillcolor = "green",label = " {Index = 1 |{ <prev> Prev = 0 | Value =  4.000000 | <next> Next = 2}} "]
+	"Nod_2" [shape = "record",style = "filled",fillcolor = "green",label = " {Index = 2 |{ <prev> Prev = 1 | Value =  3.000000 | <next> Next = 3}} "]
+	"Nod_3" [shape = "record",style = "filled",fillcolor = "green",label = " {Index = 3 |{ <prev> Prev = 2 | Value =  2.000000 | <next> Next = 4}} "]
+	"Nod_4" [shape = "record",style = "filled",fillcolor = "green",label = " {Index = 4 |{ <prev> Prev = 3 | Value =  1.000000 | <next> Next = 0}} "]
+	"firstEmpty" [shape = "record", style = "filled", color = "red", label = "firstEmpty = 4"]
+	{rank = same; Nod_0; Nod_1; Nod_2; Nod_3; Nod_4; }
 	"Nod_0" -> "Nod_1"[style = "invis"];
 	"Nod_1" -> "Nod_2"[style = "invis"];
 	"Nod_2" -> "Nod_3"[style = "invis"];
 	"Nod_3" -> "Nod_4"[style = "invis"];
-	"Nod_4" -> "Nod_5"[style = "invis"];
-	"Nod_5" -> "Nod_6"[style = "invis"];
-	"Nod_6" -> "Nod_7"[style = "invis"];
-	"Nod_7" -> "Nod_8"[style = "invis"];
-	"Nod_0":next -> "Nod_1":next[color = "blue"];
-	"Nod_0":prev -> "Nod_4":prev[color = "red"];
-	"Nod_1":next -> "Nod_2":next[color = "blue"];
-	"Nod_1":prev -> "Nod_0":prev[color = "red"];
-	"Nod_2":next -> "Nod_3":next[color = "blue"];
-	"Nod_2":prev -> "Nod_1":prev[color = "red"];
-	"Nod_3":next -> "Nod_4":next[color = "blue"];
-	"Nod_3":prev -> "Nod_2":prev[color = "red"];
-	"Nod_4":next -> "Nod_0":next[color = "blue"];
-	"Nod_4":prev -> "Nod_3":prev[color = "red"];
-	"Nod_5":next -> "Nod_6":next[color = "blue"];
-	"Nod_6":next -> "Nod_7":next[color = "blue"];
-	"Nod_7":next -> "Nod_0":next[color = "blue"];
-	"firstEmpty" -> "Nod_5";
+	"Nod_0":next -> "Nod_1":prev[color = "blue"];
+	"Nod_0":prev -> "Nod_4":next[color = "red"];
+	"Nod_1":next -> "Nod_2":prev[color = "blue"];
+	"Nod_1":prev -> "Nod_0":next[color = "red"];
+	"Nod_2":next -> "Nod_3":prev[color = "blue"];
+	"Nod_2":prev -> "Nod_1":next[color = "red"];
+	"Nod_3":next -> "Nod_4":prev[color = "blue"];
+	"Nod_3":prev -> "Nod_2":next[color = "red"];
+	"Nod_4":next -> "Nod_0":prev[color = "blue"];
+	"Nod_4":prev -> "Nod_3":next[color = "red"];
+	"firstEmpty" -> "Nod_0";
 }

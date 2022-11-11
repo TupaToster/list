@@ -330,6 +330,8 @@ int ListInsert (List* list, elem_t val, int prev) {
 
     ListResize (list);
 
+    if (list->List[prev].next != 0) list->linear = 0;
+
     list->size ++;
 
     int currElem = list->firstEmpty;
@@ -351,6 +353,7 @@ elem_t ListRemoveAndReturn (List* list, int pos) {
     assert (list != NULL);
     assert (pos > 0);
     ListVerifyHash (list);
+    list->linear = 0;
 
     elem_t retVal = list->List[pos].value;
     setPoison (list->List[pos].value);
@@ -416,6 +419,7 @@ void ListResize (List* list) {
 
     free (previousPtr);
 
+    list->linear = true;
     ListCountHash (list);
 }
 
@@ -458,13 +462,16 @@ void ListGraphDump (List* list, const char why[], int line) {
     #define picprintf(...) fprintf (picSource, __VA_ARGS__)
 
     picprintf ("digraph List_%d {" "\n", GraphDumpCounter);
+    picprintf ("\t" "graph [dpi = 100];" "\n");
+    picprintf ("\t" "splines = ortho" "\n");
     picprintf ("\t" "rankdir = TB" "\n");
+
 
     picprintf ("\t" "\"Nod_0\" [shape = \"record\","
                                 "style = \"filled\","
                                 "fillcolor = \"yellow\","
-                                "label = \" Index = NULL_ELEMENT |"
-                                "{ <prev> Tail = %d | Value = POISON | <next> Head = %d }\"]\n", list->List[0].prev, list->List[0].next);
+                                "label = \" {Index = NULL_ELEMENT |"
+                                " {<prev> Tail = %d | Value = POISON | <next> Head = %d}}\"]\n", list->List[0].prev, list->List[0].next);
 
     for (int i = 1; i <= list->capacity; i++) {
 
@@ -472,17 +479,17 @@ void ListGraphDump (List* list, const char why[], int line) {
         picprintf ("\t" "\"Nod_%d\" [shape = \"record\","
                                 "style = \"filled\",", i);
 
-        if (list->List[i].next <= 0 and isPoison (list->List[i].value)) {
+        if (list->List[i].next <= 0 and isPoison (list->List[i].value) and list->List[i].prev == 0) {
 
             picprintf ("fillcolor = \"red\","
-                       "label = \" Index = %d (FREE_ELEM) |"
-                       "{ <prev> Prev = %d | Value = POISON | <next> Next = %d}\"]\n", i, list->List[i].prev, list->List[i].next);
+                       "label = \" {Index = %d (FREE_ELEM) |"
+                       "{ <prev> Prev = %d | Value = POISON | <next> Next = %d}}\"]\n", i, list->List[i].prev, list->List[i].next);
         }
         else {
 
             picprintf ("fillcolor = \"green\","
-                       "label = \" Index = %d |"
-                       "{ <prev> Prev = %d | Value = " elem_t_F " | <next> Next = %d} \"]\n", i, list->List[i].prev, list->List[i].value, list->List[i].next);
+                       "label = \" {Index = %d |"
+                       "{ <prev> Prev = %d | Value = " elem_t_F " | <next> Next = %d}} \"]\n", i, list->List[i].prev, list->List[i].value, list->List[i].next);
         }
     }
 
@@ -504,11 +511,11 @@ void ListGraphDump (List* list, const char why[], int line) {
 
         if (abs (list->List[i].next) >= 0 and abs (list->List[i].next) <= list->capacity) {
 
-            picprintf ("\t" "\"Nod_%d\":next -> \"Nod_%d\":next[color = \"blue\"];\n", i, abs (list->List[i].next));
+            picprintf ("\t" "\"Nod_%d\":next -> \"Nod_%d\":prev[color = \"blue\"];\n", i, abs (list->List[i].next));
         }
         if (!(list->List[i].next <= 0 and isPoison (list->List[i].value)) and list->List[i].prev >= 0 and list->List[i].prev <= list->capacity) {
 
-            picprintf ("\t" "\"Nod_%d\":prev -> \"Nod_%d\":prev[color = \"red\"];\n", i, list->List[i].prev);
+            picprintf ("\t" "\"Nod_%d\":prev -> \"Nod_%d\":next[color = \"red\"];\n", i, list->List[i].prev);
         }
     }
 
@@ -535,8 +542,10 @@ void ListGraphDump (List* list, const char why[], int line) {
 void ListLinearize (List* list) {
 
     assert (list != NULL);
+    if (list->linear) return;
 
     ListVerifyHash (list);
+
 
     int ind = 0;
     for (int i = 1; i < list->size + 2; i++) {
@@ -580,6 +589,7 @@ void ListLinearize (List* list) {
         list->List[list->capacity].next = 0;
     }
 
+    list->linear = 1;
     ListCountHash (list);
 }
 

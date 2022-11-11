@@ -147,3 +147,96 @@ void ListDump (List* list) {
     flogprintf ("\n" "End of dump" "\n");
 
 }
+
+void ListGraphDump (List* list, const char why[], int line) {
+
+    assert (list != NULL);
+    assert (why != NULL);
+
+    static int GraphDumpCounter = 0;
+    const char HtmLogFile[] = "logs_out.htm";
+
+    GraphDumpCounter++;
+
+    char srcName[] = "GraphDumpSrc.dot";
+    char picName[30] = "GraphDumpPic";
+    sprintf (picName, "%d.png", GraphDumpCounter);
+
+    FILE* picSource = fopen (srcName, "w");
+    assert (picSource != NULL);
+
+    #define picprintf(...) fprintf (picSource, __VA_ARGS__)
+
+    picprintf ("digraph List_%d {" "\n", GraphDumpCounter);
+    picprintf ("\t" "graph [dpi = 100];" "\n");
+    picprintf ("\t" "splines = ortho" "\n");
+    picprintf ("\t" "rankdir = TB" "\n");
+
+
+    picprintf ("\t" "\"Nod_0\" [shape = \"record\","
+                                "style = \"filled\","
+                                "fillcolor = \"yellow\","
+                                "label = \" {Index = NULL_ELEMENT |"
+                                " {<prev> Tail = %p | Value = POISON | <next> Head = %p}}\"]\n", list->NullNod->prev, list->NullNod->next);
+
+    Nod* iter = list->NullNod->next;
+
+    for (int i = 1; iter != list->NullNod; i++) {
+
+
+        picprintf ("\t" "\"Nod_%d\" [shape = \"record\","
+                                "style = \"filled\",", i);
+
+        picprintf ("fillcolor = \"#C0FFC0\","
+                    "label = \" {Index = %d |"
+                    "{ <prev> Prev = %p | Value = " elem_t_F " | <next> Next = %p}} \"]\n", i, iter->prev, iter->value, iter->next);
+
+        iter = iter->next;
+    }
+
+    picprintf ("\t" "{rank = same; ");
+    for (int i = 0; i <= list->size; i++) {
+
+        picprintf ("Nod_%d; ", i);
+    }
+    picprintf ("}\n");
+
+    for (int i = 0; i < list->size; i++) {
+
+        picprintf ("\t" "\"Nod_%d\" -> \"Nod_%d\"[style = \"invis\"];\n", i, i + 1);
+    }
+
+    for (int i = 0; i <= list->size; i++) {
+
+        if (i != list->size) {
+
+            picprintf ("\t" "\"Nod_%d\":next -> \"Nod_%d\":prev[color = \"blue\"];\n", i, i+1);
+        }
+        if (i != 0) {
+
+            picprintf ("\t" "\"Nod_%d\":prev -> \"Nod_%d\":next[color = \"red\"];\n", i, i-1);
+        }
+    }
+
+    picprintf ("}");
+
+    #undef picprintf
+
+    fclose (picSource);
+
+    char command[100] = "";
+    sprintf (command, "dot -Tpng %s -o %s", srcName, picName);
+
+    system (command);
+
+    FILE* htm = NULL;
+    if (GraphDumpCounter == 1) htm = fopen (HtmLogFile, "w");
+    else htm = fopen (HtmLogFile, "a");
+    assert (htm != NULL);
+
+    fprintf(htm, "<pre>\n");
+    fprintf(htm, "<h2>ListDump on reason %s</h2>\n", why);
+    fprintf(htm, "<img src = \"%s\">\n", picName);
+    fprintf(htm, "<hr>\n");
+    fclose(htm);
+}

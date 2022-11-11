@@ -61,3 +61,5 @@ void setPoisonInside (void* var, size_t sizeofVar);
 bool isPoisonInside (void* var, size_t sizeofVar);
 
 void ListDump (List* list);
+
+void ListGraphDump (List* list, const char why[], int line);
